@@ -63,7 +63,7 @@ h2 {
 .container-img {
   position: relative;
   width: 100%;
-  height: 78%;
+  /*height: 78%;*/
 }
 
 .container-img:hover .overlay {
