@@ -122,6 +122,16 @@ text-align: center;
   column-gap: 40px;
 }
 
+a.btn.textsmall:nth-child(2){
+  background-color: #3B66FF;
+  color: #FFD43B;
+}
+
+a.btn.textsmall:nth-child(2):hover{
+  background-color: black;
+  color: #FF3BC8;
+}
+
 header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
