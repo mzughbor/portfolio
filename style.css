@@ -22,9 +22,10 @@ body {
   font-family: "Inter", sans-serif;
   /*font-family: "Righteous", sans-serif;
   font-family: 'Playfair Display', serif;*/
-  color: #343a40;
+  color: black;
+  background-color: #3BFF72;
   border-left: 30px dashed #ffd43b;
-  /*border-right: 30px dashed #ffd43b;*/
+  border-right: 30px dashed #FF3BC8;
 }
 
 .container {
@@ -132,8 +133,8 @@ h1 {
 }
 
 .btn:link, .btn:visited {
-  background-color: #ffd43b;
-  color: #000;
+  background-color: #3BFF72;
+  color: #FF3BC8;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -142,7 +143,7 @@ h1 {
 
 .btn:hover,
 .btn:active {
-  background-color: #ffe066;
+  background-color: #3BFF72;
 }
 
 .btn--big {
