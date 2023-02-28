@@ -13,6 +13,11 @@ a {
     text-decoration: none;
 }
 
+::selection {
+    background-color: #FF3BC8;
+    color: #3BFF72;
+}
+
 body {
   font-family: "Inter", sans-serif;
   /*font-family: "Righteous", sans-serif;
