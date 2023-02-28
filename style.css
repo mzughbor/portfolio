@@ -216,6 +216,8 @@ img {
   margin-bottom: 20px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.16);
   border-radius: 16px;
+  background-color:#3B66FF;
+  color:white;
 }
 
 .latest-work img{
@@ -263,6 +265,7 @@ h3 {
 
 .gsg-js-project:hover{
   background-color: #ffd53b87;
+  color:black;
 }
 
 footer {
