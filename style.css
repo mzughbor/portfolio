@@ -9,6 +9,10 @@ gray color : #343a40
   box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
   font-family: "Inter", sans-serif;
   /*font-family: "Righteous", sans-serif;
