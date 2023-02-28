@@ -110,6 +110,12 @@ text-align: center;
   color: red;
 }
 
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+}
+
 .grid-3-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
