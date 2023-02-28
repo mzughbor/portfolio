@@ -28,8 +28,8 @@ body {
   font-family: 'Playfair Display', serif;*/
   color: black;
   background-color: #3BFF72;
-  border-left: 30px dashed #3B66FF;
-  border-right: 30px dashed #FF3BC8;
+  border-left: 30px dashed #FF3BC8;
+  /*border-right: 30px dashed #3B66FF;*/
 }
 
 .container {
@@ -55,8 +55,8 @@ h2 {
 }
 
 .name-color{
-  color: #ffe066;
-  background-color: #3B66FF
+  color: #ffffffed;
+  background-color: #FF3BC8
 }
 
 .image {
