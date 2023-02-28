@@ -24,7 +24,7 @@ body {
   font-family: 'Playfair Display', serif;*/
   color: black;
   background-color: #3BFF72;
-  border-left: 30px dashed #ffd43b;
+  border-left: 30px dashed #3B66FF;
   border-right: 30px dashed #FF3BC8;
 }
 
@@ -133,7 +133,7 @@ h1 {
 }
 
 .btn:link, .btn:visited {
-  background-color: #3BFF72;
+  background-color: black;
   color: #FF3BC8;
   text-decoration: none;
   text-transform: uppercase;
@@ -143,7 +143,8 @@ h1 {
 
 .btn:hover,
 .btn:active {
-  background-color: #3BFF72;
+  background-color: #3B66FF;
+  color:#FFD43B;
 }
 
 .btn--big {
