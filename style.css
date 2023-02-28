@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+.ainhead{
+  color:black;
+}
+
 ::selection {
     background-color: #FF3BC8;
     color: #3BFF72;
