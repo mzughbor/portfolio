@@ -45,6 +45,11 @@ h2 {
   text-shadow: 2px 22px 18px rgba(0, 0, 0, 0.16);
 }
 
+.hero-words-color{
+  background-color: #FF3BC8;
+  color: #3BFF72;
+}
+
 .name-color{
   color: #ffe066;
   background-color: #3B66FF
