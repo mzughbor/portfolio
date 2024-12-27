@@ -18,17 +18,17 @@ a {
 }
 
 ::selection {
-    background-color: #FF3BC8;
-    color: #3BFF72;
+    background-color: #F14A00;/* old one #ff3bc8 */
+    color: #2A004E; /* old one #3BFF72 */
 }
 
 body {
   font-family: "Inter", sans-serif;
   /*font-family: "Righteous", sans-serif;
   font-family: 'Playfair Display', serif;*/
-  color: black;
-  background-color: #3BFF72;
-  border-left: 30px dashed #FF3BC8;
+  color: #e2e2e2;
+  background-color: #2A004E;
+  border-left: 30px dashed #F14A00;
   /*border-right: 30px dashed #3B66FF;*/
 }
 
@@ -50,13 +50,13 @@ h2 {
 }
 
 .hero-words-color{
-  background-color: #FF3BC8;
+  background-color: #F14A00;
   color: #ffffff;
 }
 
 .name-color{
   color: #ffffffed;
-  background-color: #FF3BC8
+  background-color: #F14A00
 }
 
 .image {
@@ -129,7 +129,7 @@ a.btn.textsmall:nth-child(2){
 
 a.btn.textsmall:nth-child(2):hover{
   background-color: black;
-  color: #FF3BC8;
+  color: #F14A00;
 }
 
 header {
@@ -159,7 +159,7 @@ h1 {
 
 .btn:link, .btn:visited {
   background-color: black;
-  color: #FF3BC8;
+  color: #F14A00;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -200,7 +200,7 @@ img {
 }
 
 .features-icon {
-  stroke: #FF3BC8;
+  stroke: #F14A00;
   width: 50px;
   height: 50px;
   margin-bottom: 24px;
@@ -294,7 +294,7 @@ h3 {
 }
 
 .latest-work-icon:hover {
-  stroke: #FF3BC8;
+  stroke: #F14A00;
 }
 
 .gsg-js-project:hover{
