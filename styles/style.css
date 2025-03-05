@@ -11,7 +11,7 @@ gray color : #343a40
 
 a {
     text-decoration: none;
-    color: #001ea3da;
+    color: #758eff;
 }
 
 .ainhead{
@@ -243,6 +243,11 @@ img {
   font-size: 36px;
 }
 
+
+.testimonial-box>h3, .testimonial-box>blockquote, .testimonial-box>p {
+  color: #ffffff;
+}
+
 .testimonial-text {
   font-style: italic;
   margin-bottom: 24px;
@@ -256,7 +261,7 @@ img {
   margin-bottom: 20px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.16);
   border-radius: 16px;
-  background-color:#00000085;
+  background-color:#000000ad;
   color: #e2e2e2;
 }
 
