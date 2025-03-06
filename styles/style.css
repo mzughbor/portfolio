@@ -11,7 +11,7 @@ gray color : #343a40
 
 a {
     text-decoration: none;
-    color: #758eff;
+    color: #4b6cff;
 }
 
 .ainhead{
@@ -19,8 +19,8 @@ a {
 }
 
 ::selection {
-    background-color: #F14A00;/* old one #ff3bc8 */
-    color: #2A004E; /* old one #3BFF72 */
+    background-color: lightgreen;
+    color: darkgreen; 
 }
 
 body {
@@ -29,7 +29,7 @@ body {
   font-family: 'Playfair Display', serif;*/
   color: #000000;
   background: conic-gradient(from 90deg at 1px 1px, rgba(0, 0, 0, 0) 90deg, #dfe0e8 0) 0 0 / 32px 32px;
-  border-left: 20px dashed #F14A00;
+  border-left: 20px dashed lightgreen;
 }
 
 .container {
@@ -55,13 +55,13 @@ h3 {
 }
 
 .hero-words-color{
-  background-color: #F14A00;
+  background-color: lightgreen;
   color: #000000;
 }
 
 .name-color{
   color: #ffffffe0;
-  background-color: #F14A00
+  background-color: green
 }
 
 .image {
@@ -81,7 +81,7 @@ h3 {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #500073;
+  background-color: yellow;
   border-radius: 0px;
   border-bottom-left-radius: 65px;
   border-top-right-radius: 65px;
@@ -99,7 +99,7 @@ h3 {
 }
 
 .text {
-color: #cfcfcf;
+color: #000000;
 font-size: 22px;
 position: absolute;
 top: 50%;
@@ -111,7 +111,7 @@ text-align: center;
 }
 
 .red{
-  color: #F14A00;
+  color: darkgreen;
 }
 
 .grid-2-cols {
@@ -133,8 +133,8 @@ a.btn.textsmall:nth-child(2){
 }
 
 a.btn.textsmall:nth-child(2):hover{
-  background-color: #00000085;
-  color: #F14A00;
+  background-color: yellow;
+  color: darkgreen;
   border: 1px solid #00000000;
 }
 
@@ -165,7 +165,7 @@ h1 {
 
 .btn:link, .btn:visited {
   background-color: #e2e2e2;
-  color: #ff4d00;
+  color: green;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -174,8 +174,8 @@ h1 {
 
 .btn:hover,
 .btn:active {
-  background-color: #00000085;
-  color:#F14A00;
+  background-color: green;
+  color:yellow;
 }
 
 .btn--big {
@@ -206,7 +206,7 @@ img {
 }
 
 .features-icon {
-  stroke: #F14A00;
+  stroke: green;
   width: 50px;
   height: 50px;
   margin-bottom: 24px;
@@ -224,7 +224,7 @@ img {
 }
 
 .testimonial-section {
-  background-color: #F14A00;
+  background-color: green;
   padding: 25px;
   border-radius: 16px;
 }
@@ -263,6 +263,7 @@ img {
   border-radius: 16px;
   background-color:#000000ad;
   color: #e2e2e2;
+  border: 1px solid lightgreen;
 }
 
 .latest-work img{
@@ -298,7 +299,7 @@ h3 {
 }
 
 .latest-work-icon {
-  stroke: #e2e2e2e2;
+  stroke: lightgreen;
   width: 24px;
   height: 24px;
 }
@@ -317,7 +318,7 @@ footer {
   text-transform: capitalize;
   font-size: 16px;
   color: #e2e2e2;
-  background-color:#F14A00;
+  background-color:green;
   position: absolute;
   left: 0px;
   right: 0px;
