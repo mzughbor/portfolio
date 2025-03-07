@@ -380,6 +380,9 @@ img {
   background-color:#000000e6;
   color: #e2e2e2;
   border: 1px solid lightgreen;
+  /* for slider */
+  max-width: 50%; /* Display 2 slides at a time */
+
 }
 
 .latest-work img{
@@ -448,4 +451,94 @@ footer {
 
 .mzughb{
   width: 100%;
+}
+
+/* **************** */ 
+/* Projects sliders */
+/* **************** */ 
+
+.slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  /* justify-content: center;*/
+  /*  width: 100%; */
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  /*flex: 1;*/  
+  max-width: 960px;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  cursor: grab;
+  /*align-items: center;*/
+  gap: 40px;
+
+}
+
+.slide {
+  min-width: calc(50% - 20px); /* Two slides per view, considering gap */
+  flex: 0 0 auto;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  position: relative;
+  max-width: 960px; /* Ensure the full width */
+}
+
+button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+}
+
+#prev {
+  left: -50px; /* Move outside the container */
+}
+
+#next {
+  right: -50px; /* Move outside the container */
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: gray;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: black;
 }

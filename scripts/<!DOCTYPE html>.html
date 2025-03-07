@@ -1,36 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Fix</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <section id="jump">
+        <h2>My latest works...</h2>
+        <div class="slider-wrapper">
+            <div class="slider-controls">
+                <button id="prev">❮</button>
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="slide">Slide 1</div>
+                        <div class="slide">Slide 2</div>
+                        <div class="slide">Slide 3</div>
+                        <div class="slide">Slide 4</div>
+                    </div>
+                </div>
+                <button id="next">❯</button>
+            </div>
+        </div>
+        <div class="dots"></div>
+    </section>
+</body>
+</html>
 
-/* making the header showing and desapering when scroll up and down...*/
-document.addEventListener("DOMContentLoaded", function () {
+<style>
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+.slider-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+.slider-track {
+    display: flex;
+    gap: 40px;
+    transition: transform 0.5s ease-in-out;
+    cursor: grab;
+}
+.slide {
+    min-width: calc(50% - 20px);
+    flex: 0 0 auto;
+}
+button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    background: gray;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dot.active {
+    background: black;
+}
+</style>
 
-    const header = document.querySelector(".header");
-    let lastScrollTop = 0;
-    const headerHeight = header.offsetHeight;
-
-    // Ensure the header is visible on first page load
-    header.classList.add("sticky");
-
-    window.addEventListener("scroll", function () {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (scrollTop > lastScrollTop) {
-            // Scrolling down
-            header.classList.remove("small", "sticky");
-        } else {
-            // Scrolling up
-            if (scrollTop < headerHeight) {
-                header.classList.add("small");
-                header.classList.remove("sticky");
-            } else {
-                header.classList.add("sticky");
-                header.classList.remove("small");
-            }
-        }
-
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Prevent negative values
-    });    
-});
-
-/* slides the latest work section*/
+<script>
 document.addEventListener("DOMContentLoaded", function () {
     const track = document.querySelector(".slider-track");
     const slides = document.querySelectorAll(".slide");
@@ -138,3 +197,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(nextSlide, 3000);
 });
+</script>
