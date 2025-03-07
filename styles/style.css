@@ -381,8 +381,7 @@ img {
   color: #e2e2e2;
   border: 1px solid lightgreen;
   /* for slider */
-  max-width: 50%; /* Display 2 slides at a time */
-
+  max-width:calc(50% - 20px); /* Display 2 slides at a time - the gaps */
 }
 
 .latest-work img{
@@ -427,10 +426,12 @@ h3 {
   stroke: #343434;
 }
 
+/*
 .gsg-js-project:hover{
   background-color: #ffd53b87;
   color:black;
 }
+*/
 
 footer {
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.16);
