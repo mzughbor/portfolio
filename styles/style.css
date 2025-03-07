@@ -463,8 +463,7 @@ footer {
   flex-direction: column;
   position: relative;
   align-items: center;
-  /* justify-content: center;*/
-  /*  width: 100%; */
+  justify-content: center;
 }
 
 .slider-container {
@@ -517,11 +516,11 @@ button {
 
 }
 
-#prev {
+.prev {
   left: -50px; /* Move outside the container */
 }
 
-#next {
+.next {
   right: -50px; /* Move outside the container */
 }
 
