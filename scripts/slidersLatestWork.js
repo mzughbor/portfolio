@@ -102,6 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
             isDragging = false;
         });
 
-        setInterval(nextSlide, 5000);
+        setInterval(nextSlide, 9000);
     });
 });
