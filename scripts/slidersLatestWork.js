@@ -1,24 +1,24 @@
-
-/* slides the latest work section*/
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".slider-section").forEach((section) => {
         const track = section.querySelector(".slider-track");
-        const slides = section.querySelectorAll(".slide");
+        const slides = Array.from(section.querySelectorAll(".slide"));
         const prevButton = section.querySelector(".prev");
         const nextButton = section.querySelector(".next");
         const dotsContainer = section.querySelector(".dots");
-        let index = 1;
+        
+        const slidesToShow = parseInt(section.getAttribute("data-slides-to-show")) || 1;
+        const slideWidth = slides[0].offsetWidth + 40;
+        let index = slidesToShow;
         const totalSlides = slides.length;
         let isDragging = false;
         let startX = 0;
 
-        const firstClone = slides[0].cloneNode(true);
-        const lastClone = slides[totalSlides - 1].cloneNode(true);
-        track.insertBefore(lastClone, slides[0]);
-        track.appendChild(firstClone);
+        const firstClone = slides.slice(0, slidesToShow).map(slide => slide.cloneNode(true));
+        const lastClone = slides.slice(-slidesToShow).map(slide => slide.cloneNode(true));
+        lastClone.reverse().forEach(clone => track.insertBefore(clone, slides[0]));
+        firstClone.forEach(clone => track.appendChild(clone));
 
         const allSlides = section.querySelectorAll(".slide");
-        const slideWidth = slides[0].offsetWidth + 40;
         track.style.transform = `translateX(-${index * slideWidth}px)`;
 
         slides.forEach((_, i) => {
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             dot.classList.add("dot");
             if (i === 0) dot.classList.add("active");
             dot.addEventListener("click", () => {
-                index = i + 1;
+                index = i + slidesToShow;
                 updateSlidePosition();
             });
             dotsContainer.appendChild(dot);
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         function updateDots() {
             dotsContainer.querySelectorAll(".dot").forEach((dot, i) => {
-                dot.classList.toggle("active", i === index - 1);
+                dot.classList.toggle("active", i === index - slidesToShow);
             });
         }
 
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 updateSlidePosition();
                 setTimeout(() => {
                     track.style.transition = "none";
-                    index = 1;
+                    index = slidesToShow;
                     updateSlidePosition(false);
                 }, 500);
             } else {
@@ -94,13 +94,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        track.addEventListener("mouseup", () => {
-            isDragging = false;
-        });
-
-        track.addEventListener("mouseleave", () => {
-            isDragging = false;
-        });
+        track.addEventListener("mouseup", () => { isDragging = false; });
+        track.addEventListener("mouseleave", () => { isDragging = false; });
 
         setInterval(nextSlide, 9000);
     });

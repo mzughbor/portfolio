@@ -1,6 +1,14 @@
 /*
 main color : #ffe500 / ffd43b => https://yeun.github.io/open-color/#yellow
 gray color : ??
+
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+    
+    FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    
+
 */
 
 * {
@@ -30,6 +38,9 @@ body {
   color: black;
   background: conic-gradient(from 90deg at 1px 1px, rgba(0, 0, 0, 0) 90deg, #dfe0e8 0) 0 0 / 32px 32px;
   /*border-left: 20px dashed lightgreen;*/
+
+  line-height: 1;
+
 }
 
 .container {
@@ -241,6 +252,42 @@ text-align: center;
   column-gap: 40px;
 }
 
+/* for carousal */
+.btn-carousel {
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #94d82d;
+}
+
+.btn--left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, .25);
+}
+
+.btn--right {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, .25);
+}
+
+/* ********* btn carousal ends *********** */
+
 a.btn.textsmall:nth-child(2){
   background-color: #ffffff00;
   color: #131313;
@@ -321,6 +368,26 @@ img {
   border-radius: 16px;
 }
 
+.carousel {
+  width: 800px;
+  margin: 100px auto;
+  background-color: #94d82d;
+  border-radius: 8px;
+  padding: 32px;
+  padding-left: 86px;
+  display: flex;
+  gap: 80px;
+  position: relative;
+  align-items: center;
+}
+
+.img-carousel {
+  width: 25%;
+  border-radius: 8px;
+  transform: scale(1.5);
+  box-shadow: 0 12px 10px rgba(0, 0, 0, .25);
+}
+
 .features-icon {
   stroke: green;
   width: 50px;
@@ -370,6 +437,27 @@ img {
   font-size: 18px;
   line-height: 1.5;
   padding:30px;
+}
+
+.testimonial-text-carousel {
+  font-weight: 500;
+  line-height: 1.5;
+  background-color: black;
+  color: #94d82d;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  margin-bottom: 4px;
+  /* padding-left: 15px; */
+  padding-top: 15px;
+}
+
+.testimonial-job {
+  font-size: 12px;
+  /* padding-left: 15px; */
 }
 
 .latest-work{
@@ -485,7 +573,6 @@ footer {
 
 .slide {
   min-width: calc(50% - 20px); /* Two slides per view, considering gap */
-  flex: 0 0 auto;
 }
 
 .slider-controls {
@@ -495,6 +582,7 @@ footer {
   width: 100%;
   position: relative;
   max-width: 960px; /* Ensure the full width */
+  justify-content:center;
 }
 
 button {
@@ -513,7 +601,6 @@ button {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-
 }
 
 .prev {
@@ -537,8 +624,42 @@ button {
   margin: 5px;
   border-radius: 50%;
   cursor: pointer;
+
+  background-color: #fff;
+  border: 2px solid darkgray;
+  border-radius: 50%;
+
 }
 
 .dot.active {
   background: black;
+}
+
+.dots-carousel {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0;
+  transform: translate(-50%, 32px);
+  display: flex;
+  gap: 12px;
+}
+
+.dot--fill {
+  background-color: green;
+}
+
+
+/* making js SliderLatest Work works for testimaonals section*/
+/* Adjust slide width dynamically */
+.slider-section[data-slides-to-show="1"] .slide {
+  min-width: 100%;
+}
+
+.slider-section[data-slides-to-show="2"] .slide {
+  min-width: calc(50% - 20px);
+}
+
+.slider-section[data-slides-to-show="3"] .slide {
+  min-width: calc(33.33% - 20px);
 }
