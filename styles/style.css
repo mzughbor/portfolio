@@ -663,3 +663,76 @@ button {
 .slider-section[data-slides-to-show="3"] .slide {
   min-width: calc(33.33% - 20px);
 }
+
+/* Prevent text selection and image dragging in all sliders */
+.slider-section .slide, .slider-section .slide * {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+}
+.slider-section .slide img {
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+.doodle-card-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.doodle-card-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.doodle-card-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.doodle-card-content {
+  padding: 1rem;
+  background: #fafafa;
+}
+
+.doodle-card-content__date {
+  font-size: 0.875rem;
+  color: #999;
+  margin-bottom: 0.25rem;
+}
+
+.doodle-card-content__event {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  line-height: initial;
+}
+
+.doodle-card-content__desc {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Prevent user from selecting slider cards text and dragging images */
+.doodle-card-wrapper, .doodle-card-wrapper * {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+}
+.doodle-card-wrapper img {
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
