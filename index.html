@@ -1035,7 +1035,7 @@
       <footer class="grid-3-cols">
         <div></div>
         <div class="footmz">
-          Copyright &copy; 2025. Created with 🖤 by Mahmoud Zughbor
+          &copy; <span id="current-year"></span> Created with 🖤 by Mahmoud Zughbor
         </div>
         <div></div>
       </footer>
@@ -1045,5 +1045,8 @@
     <script src="./scripts/headerScroll.js"></script>
     <script src="./scripts/slidersLatestWork.js"></script>
     <script src="./scripts/displayData.js"></script>
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
