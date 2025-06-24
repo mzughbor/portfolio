@@ -46,6 +46,18 @@ body {
 .container {
   width: 960px;
   margin: 0 auto;
+  padding: 40px 0;
+}
+
+.hero-container {
+  width: 1189px;
+  margin: 0 auto;
+  border: 1px solid black;
+  background-color: cornsilk;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  padding: 40px 0;
+  border-radius: 16px;
 }
 
 /*********************************/
@@ -197,7 +209,7 @@ h3 {
   border-radius: 0px;
   border-bottom-left-radius: 65px;
   border-top-right-radius: 65px;
-  box-shadow: 5px 5px 30px 20px #3d6e4345;
+  box-shadow: 3px 3px 20px 10px #94d82d2b;
 }
 
 .overlay {
@@ -216,11 +228,19 @@ h3 {
   border-top-right-radius: 65px;
 }
 
+.background-grid {
+  background: radial-gradient(circle at center, rgba(255, 248, 220, 0) 60%, cornsilk 100%),
+    conic-gradient(from 90deg at 1px 1px, rgba(0, 0, 0, 0) 90deg, #dfe0e8 0) 0 0 / 32px 32px;
+  background-blend-mode: lighten;
+  background-repeat: repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container-img {
   position: relative;
-  width: 100%;
-  height: 440px;
-  margin-top: 135px;
+  width: 65%;
 }
 
 .container-img:hover .overlay {
@@ -306,8 +326,7 @@ a.btn.textsmall:nth-child(2):hover {
 .hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 80px;
-  margin-top: 150px;
+  column-gap: 40px;
 }
 
 .header-text-box {
