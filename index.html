@@ -10,32 +10,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-
   <!--<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-
+  <link rel="icon" type="image/x-icon" href="/images/file.enc" />
   <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+  <link rel="stylesheet" href="styles/darkMode.css" />
   <title>mzughbor Portfolio!</title>
 </head>
 
 <body>
-
   <header class="header">
-    <a href="#" class="header-logo">
-      <img class="logo" alt="Mzughbor Logo" src="logos/lightMode-logo-yellow-shallow.gif">
+    <a href="#" id="header-logo">
+      <img class="logo lightMode active" alt="Mzughbor Logo" src="logos/lightMode-logo-purpule-transparent.gif">
+      <img class="logo darkMode" alt="Mzughbor Logo" src="logos/darkMode-logo-coloerd-transparent.gif">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav">    
       <ul class="main-nav-list">
-        <li><a class="main-nav-link" href="#links">Links</a></li>
-        <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
-        <li><a class="main-nav-link" href="#jump">Real Projects</a></li>
-        <li><a class="main-nav-link" href="#experimental">Dummy Projects</a></li>
-        <li><a class="main-nav-link nav-cta" target="_blank" href="https://wa.me/+201014674522">Contact me</a></li>
+        <div class="theme-toggle" id="themeToggle">
+          <img class="moon-icon active" src="/images/moon-svgrepo-com.svg" alt="Moon Icon">
+          <img class="sun-icon " src="/images/sun-2-svgrepo-com.svg" alt="Sun Icon">
+        </div>        
+        <li><a class="d-text-color main-nav-link" href="#links">Links</a></li>
+        <li><a class="d-text-color main-nav-link" href="#testimonials">Testimonials</a></li>
+        <li><a class="d-text-color main-nav-link" href="#jump">Real Projects</a></li>
+        <li><a class="d-text-color main-nav-link" href="#experimental">Dummy Projects</a></li>
+        <li><a class="d-text-color main-nav-link nav-cta" target="_blank" href="https://wa.me/+201014674522">Contact me</a></li>
       </ul>
     </nav>
   </header>
 
-  <div class="hero-container">
+  <div class="hero-container w-bg-color">
     <div class="container">
       <h1> Hi there ... I'm “ Mahmoud Zughbor ”</h1>
       <div class="hero">
@@ -55,13 +60,13 @@
           </p>
           <div class="grid-2-cols">
             <a class="btn textsmall" id="cv-btn" href="files/cv-mzughbor.docx.pdf">View my CV</a>
-            <a class="btn textsmall" href="#jump">Or Jump to Latest Work</a>
+            <a class="btn textsmall" id="jump-btn" href="#jump">Or Jump to Latest Work</a>
           </div>
         </div>
 
-        <div class="background-grid">
+        <div id="bg-grid" class="background-grid background-grid-light">
           <figure class="container-img">
-            <img class="image" src="imgs/IMG_20230417_222639.jpg" alt="myprittyface" />
+            <img class="image" src="images/IMG_20230417_222639.jpg" alt="myprittyface" />
             <figcaption class="overlay">
               <p class="text">
                 What you want??<br />go to my <mark class="red">cv</mark> and have a look, <mark class="red">
@@ -96,7 +101,7 @@
     </section>
   </div>
 
-  <div class="full-container">
+  <div class="full-container w-bg-color ">
     <div class="container">
       <section>
         <h2>What makes me special?</h2>
@@ -154,9 +159,7 @@
   <div class="container">
   
     <section id="testimonials" class="slider-section" data-slides-to-show="1">
-
-      <h2><a class="ainhead" target="_blank" href="https://mostaql.com/u/mzughbor/reviews">Previous Clients
-          Testimonials...</a></h2>
+      <h2>Previous <a target="_blank" href="https://mostaql.com/u/mzughbor/reviews">Clients</a> Testimonials...</h2>
       <div class="slider-wrapper">
         <div class="slider-controls">
           <button class="prev">❮</button>
@@ -174,7 +177,7 @@
                   </blockquote>
                   <p class="testimonial-author">review by&mdash; Omar Ksa</p>
                 </div>
-                <img src="imgs/1654094484913.jpg" alt="testimonial review" class="testimonial-img" />
+                <img src="images/1654094484913.jpg" alt="testimonial review" class="testimonial-img" />
               </div>
 
               <div class="slide grid-3-cols testimonial-section">
@@ -187,7 +190,7 @@
                   </blockquote>
                   <p class="testimonial-author">review by&mdash; Abu Y.</p>
                 </div>
-                <img src="imgs/review-691177-5754693-og.png" alt="testimonial review" class="testimonial-img" />
+                <img src="images/review-691177-5754693-og.png" alt="testimonial review" class="testimonial-img" />
               </div>
 
               <div class="slide grid-3-cols testimonial-section">
@@ -198,7 +201,7 @@
                   </blockquote>
                   <p class="testimonial-author">review by&mdash; Owner M.</p>
                 </div>
-                <img src="imgs/review-658987-5492576-og.png" alt="testimonial review" class="testimonial-img" />
+                <img src="images/review-658987-5492576-og.png" alt="testimonial review" class="testimonial-img" />
               </div>
 
               <div class="slide grid-3-cols testimonial-section">
@@ -212,7 +215,7 @@
                   </blockquote>
                   <p class="testimonial-author">review by&mdash; Hossam M.</p>
                 </div>
-                <img src="imgs/review-593398-4975004-og.png" alt="testimonial review" class="testimonial-img" />
+                <img src="images/review-593398-4975004-og.png" alt="testimonial review" class="testimonial-img" />
               </div>
 
               <div class="slide grid-3-cols testimonial-section">
@@ -229,7 +232,7 @@
                   </blockquote>
                   <p class="testimonial-author">review by&mdash; Mostafa M. @stadkora </p>
                 </div>
-                <img src="imgs/freelancer-logo-light.svg" alt="testimonial review" class="testimonial-img" />
+                <img src="images/freelancer-logo-light.svg" alt="testimonial review" class="testimonial-img" />
               </div>
 
               <div class="slide grid-3-cols testimonial-section">
@@ -240,7 +243,7 @@
                   </blockquote>
                   <p class="testimonial-author">review by&mdash; Anant K. @AnantKhemka</p>
                 </div>
-                <img src="imgs/freelancer-logo-light.svg" alt="testimonial review" class="testimonial-img" />
+                <img src="images/freelancer-logo-light.svg" alt="testimonial review" class="testimonial-img" />
               </div>
 
             </div>
@@ -273,7 +276,7 @@
 
               <figure class="slide latest-work gsg-js-project">
                 <a target="_blank" href="https://academyik.com/"><img
-                    src="imgs/نقطة المعرفة الدولية للتصميم والتطوير.png"
+                    src="images/نقطة المعرفة الدولية للتصميم والتطوير.png"
                     alt="موقع نقطة المعرفة الدولية للتصميم والتطوير" /></a>
                 <div class="latest-work-box">
                   <h3>
@@ -322,8 +325,8 @@
               </figure>
 
               <figure class="slide latest-work gsg-js-project">
-                <a target="_blank" href="imgs/homePage-vastuastrology.png">
-                  <img src="imgs/cover-vastuastrology-site.png" alt="work-img" />
+                <a target="_blank" href="images/homePage-vastuastrology.png">
+                  <img src="images/cover-vastuastrology-site.png" alt="work-img" />
                 </a>
                 <div class="latest-work-box">
                   <h3>
@@ -344,7 +347,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                           d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                       </svg>
-                      <span>Review <a target="_blank" href="imgs/homePage-vastuastrology.png">Home Page.</a></span>
+                      <span>Review <a target="_blank" href="images/homePage-vastuastrology.png">Home Page.</a></span>
                     </li>
                     <li>
                       <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
@@ -352,7 +355,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                           d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                       </svg>
-                      <span>Review <a target="_blank" href="imgs/about-us-vastuastrology.png">About-Us Page.</a></span>
+                      <span>Review <a target="_blank" href="images/about-us-vastuastrology.png">About-Us Page.</a></span>
                     </li>
                     <li>
                       <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
@@ -360,8 +363,8 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                           d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
-                      <span>View <a target="_blank" href="imgs/services-page-vastuastrology.png">Services page</a>, & <a
-                          target="_blank" href="imgs/contact-us-vastuastrology.png">Contact-Us page.</span>
+                      <span>View <a target="_blank" href="images/services-page-vastuastrology.png">Services page</a>, & <a
+                          target="_blank" href="images/contact-us-vastuastrology.png">Contact-Us page.</span>
                     </li>
                   </ul>
                   <div class="">
@@ -371,8 +374,8 @@
               </figure>
 
               <figure class="slide latest-work gsg-js-project">
-                <a target="_blank" href="imgs/دنتال هوم مكة - الصفحه الرئيسية -.jpg"><img
-                    src="imgs/rsz_screenshot_761.png" alt="dentalhome-makkah-work-img" /></a>
+                <a target="_blank" href="images/دنتال هوم مكة - الصفحه الرئيسية -.jpg"><img
+                    src="images/rsz_screenshot_761.png" alt="dentalhome-makkah-work-img" /></a>
                 <div class="latest-work-box">
                   <h3>
                     Redesigning Dental Clinic Site
@@ -410,7 +413,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                           d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
-                      <a target="_blank" href="imgs/دنتال هوم مكة - الصفحه الرئيسية -.jpg"><span>Go to site
+                      <a target="_blank" href="images/دنتال هوم مكة - الصفحه الرئيسية -.jpg"><span>Go to site
                           Now!</span></a>
                     </li>
                   </ul>
@@ -422,7 +425,7 @@
               </figure>
 
               <figure class="slide latest-work gsg-js-project">
-                <a target="_blank" href="https://stadkora.com/"><img src="imgs/rsz_screenshot_760.png"
+                <a target="_blank" href="https://stadkora.com/"><img src="images/rsz_screenshot_760.png"
                     alt="StadKora-work-img" /></a>
                 <div class="latest-work-box">
                   <h3>
@@ -467,13 +470,13 @@
                     </li>
                   </ul>
                   <div class="">
-                    <a target="_blank" href="imgs/Green-StadKora.com.png" class="btn btn--small">Have a look!</a>
+                    <a target="_blank" href="images/Green-StadKora.com.png" class="btn btn--small">Have a look!</a>
                   </div>
                 </div>
               </figure>
 
               <figure class="slide latest-work gsg-js-project">
-                <a target="_blank" href="https://interludeksa.com"><img src="imgs/rsz_1interludeksa-hero-section.jpg"
+                <a target="_blank" href="https://interludeksa.com"><img src="images/rsz_1interludeksa-hero-section.jpg"
                     alt="interludeksa-work-img" /></a>
                 <div class="latest-work-box">
                   <h3>
@@ -520,7 +523,7 @@
               </figure>
 
               <figure class="slide latest-work gsg-js-project">
-                <a target="_blank" href="https://sabbarstudio.com"><img src="imgs/main_subbar.png"
+                <a target="_blank" href="https://sabbarstudio.com"><img src="images/main_subbar.png"
                     alt="sabbar-work-img" /></a>
                 <div class="latest-work-box">
                   <h3>
@@ -567,7 +570,7 @@
               </figure>
 
               <figure class="slide latest-work gsg-js-project">
-                <a target="_blank" href="https://t.me/AlmarbadLib_bot"><img src="imgs/telgram_bot.jpg"
+                <a target="_blank" href="https://t.me/AlmarbadLib_bot"><img src="images/telgram_bot.jpg"
                     alt="telgram_bot" /></a>
                 <div class="latest-work-box">
                   <h3>
@@ -619,8 +622,8 @@
               </figure>
 
               <figure class="slide latest-work gsg-js-project">
-                <a target="_blank" href="imgs/blog.banana.sa-mainPage.png">
-                  <img src="imgs/cover.jpg" alt="first-work-img" />
+                <a target="_blank" href="images/blog.banana.sa-mainPage.png">
+                  <img src="images/cover.jpg" alt="first-work-img" />
                 </a>
                 <div class="latest-work-box">
                   <h3>
@@ -641,7 +644,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                           d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                       </svg>
-                      <span>From Scratch, See <a target="_blank" href="imgs/blog.banana.sa-mainPage.png">Main Blog page
+                      <span>From Scratch, See <a target="_blank" href="images/blog.banana.sa-mainPage.png">Main Blog page
                           from here.</a></span>
                     </li>
 
@@ -651,7 +654,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                           d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
-                      <span>View <a target="_blank" href="imgs/blog-post-page.png">Blog post page.</a></span>
+                      <span>View <a target="_blank" href="images/blog-post-page.png">Blog post page.</a></span>
                     </li>
                     <li>
                       <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
@@ -659,7 +662,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                           d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
-                      <span>View <a target="_blank" href="imgs/categories-page.png"> categories page.</a></span>
+                      <span>View <a target="_blank" href="images/categories-page.png"> categories page.</a></span>
                     </li>
                     <li>
                       <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
@@ -667,8 +670,8 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                           d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
-                      <span>View <a target="_blank" href="imgs/sign-new-account-page.png">Signin account page</a>, & <a
-                          target="_blank" href="imgs/log-in-page.png">Login page.</span>
+                      <span>View <a target="_blank" href="images/sign-new-account-page.png">Signin account page</a>, & <a
+                          target="_blank" href="images/log-in-page.png">Login page.</span>
                     </li>
 
                   </ul>
@@ -718,6 +721,7 @@
   <script src="./scripts/headerScroll.js"></script>
   <script src="./scripts/slidersLatestWork.js"></script>
   <script src="./scripts/displayData.js"></script>
+  <script src="./scripts/darkMode.js"></script>
   <script>
     document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll(".main-nav-link, .header-logo"); // Include logo
+    const links = document.querySelectorAll(".main-nav-link, #header-logo, #jump-btn"); // Include logo + jump button 
 
     links.forEach(link => {
         link.addEventListener("click", function (event) {
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (href.startsWith("http")) return;
 
             event.preventDefault();
-            
+
             // Scroll to top if href is "#"
             if (href === "#") {
                 window.scrollTo({ top: 0, behavior: "smooth" });

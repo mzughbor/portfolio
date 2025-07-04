@@ -1,0 +1,83 @@
+:root {
+    --main-color: #7952B3;
+    --accent-color: #FFC107;
+    --bg-color: #E1E8EB;
+    --text-color: #343A40;
+    --dark-text-color: #080808;
+    --main-color-p2: #8F43EE;
+    --accent-color-p2: #F0EB8D;
+    --heavy-gray-color-p2: #413543;
+    --dark-color-p2: #2D2727;
+    --bg-lighter-color-p3: #F5F5F5;
+    --bg-light-color-p3: #E8E2E2;
+    --bg-white-color: #FFFFFF;
+    --bg-black-color: #000000;
+    --bg-white-transparent: #ffffffe1;
+    --dark-black-transparent-box-shadow: #00000026;
+    --light-main-transparent-box-shadow: #6a37b74f;
+}
+
+/* For Toggle the dark and light modes */
+.moon-icon,
+.sun-icon {
+    width: 24px;
+}
+
+.theme-toggle img,
+img.logo {
+    display: none;
+}
+
+.theme-toggle img.active,
+img.logo.active {
+    display: block;
+}
+
+div#themeToggle {
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #7952b38a;
+    cursor: pointer;
+}
+
+.dark-theme {
+    color: var(--bg-white-color);
+    background: conic-gradient(from 90deg at 1px 1px, rgba(0, 0, 0, 0) 90deg, #6d3b8152 0) 0 0 / 64px 64px;
+    background-color: var(--dark-text-color);
+}
+
+.h-black {
+    background-color: var(--bg-black-color);
+    border-bottom: solid 1px var(--bg-lighter-color-p3);
+}
+
+.h.white {
+    background-color: var(--bg-white-color);
+    border-bottom: solid 1px var(--heavy-gray-color-p2);
+}
+
+.w-text-color {
+    color: var(--bg-lighter-color-p3);
+}
+
+.d-text-color {
+    color: var(--dark-text-color);
+}
+
+.w-bg-color {
+    background-color: var(--bg-light-color-p3);
+}
+
+.d-bg-color {
+    background-color: var(--heavy-gray-color-p2);
+}
+
+.background-grid-light {
+    background: radial-gradient(circle at center, #fff8dc00 60%, var(--bg-light-color-p3) 100%),
+        conic-gradient(from 90deg at 1px 1px, #00000000 90deg, #bfc1ce 0) 3% 7% / 48px 48px;
+}
+
+.background-grid-dark {
+    background: radial-gradient(circle at center, #fff8dc00 60%, var(--heavy-gray-color-p2) 100%),
+        conic-gradient(from 90deg at 1px 1px, #00000000 90deg, #36332e 0) 3% 7% / 48px 48px;
+}
