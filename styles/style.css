@@ -56,12 +56,18 @@ body {
 }
 
 .container {
-  width: 960px;
+  width: 70vw;
+  /* 960px*/
   margin: 0 auto;
 }
 
+.hero-container,
+.full-container {
+  width: 85vw;
+  /* 1189px*/
+}
+
 .hero-container {
-  width: 1189px;
   margin: 0 auto;
   border: 1px solid var(--dark-color-p2);
   margin-top: 100px;
@@ -261,7 +267,6 @@ mark {
 }
 
 .full-container {
-  width: 1189px;
   margin: 0 auto;
   border: 1px solid var(--dark-color-p2);
   border-radius: 16px;
@@ -383,6 +388,10 @@ h1 {
   margin: 10px;
   text-align: center;
   border-radius: 50px;
+}
+
+.logo {
+  border-radius: 0;
 }
 
 img {
@@ -541,7 +550,8 @@ footer {
 }
 
 .footmz {
-  width: 960px;
+  max-width: 70vw;
+  /*960px*/
   padding: 48px 0;
   height: 40px;
   text-align: center;
@@ -568,7 +578,8 @@ footer {
   width: 100%;
   position: relative;
   /*flex: 1;*/
-  max-width: 960px;
+  max-width: 70vw;
+  /*960px*/
 }
 
 .slider-track {
@@ -591,7 +602,8 @@ footer {
   gap: 10px;
   width: 100%;
   position: relative;
-  max-width: 960px;
+  max-width: 70vw;
+  /*960px*/
   /* Ensure the full width */
   justify-content: center;
 }

@@ -1,0 +1,37 @@
+/* media query */
+@media (max-width: 1230px) {
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 30.8px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    h3 {
+        font-size: 16.8px;
+    }
+
+    .header-text,
+    .features-title {
+        font-size: 14px;
+    }
+
+    .features-text {
+        font-size: 11.2px;
+    }
+
+    .textsmall {
+        font-size: 9.8px;
+    }
+
+    .btn--big {
+        font-size: 12.6px;
+    }
+}
