@@ -89,6 +89,10 @@ body.lock-scroll {
 }
 
 @media (max-width: 1024px) {
+    #header-logo {
+        flex: 0 0 25%;
+    }
+
     .hamburger {
         display: flex;
     }
@@ -109,4 +113,37 @@ body.lock-scroll {
         display: flex;
     }
 
+    .grid-3-cols.features {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 25px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container-img {
+        width: 45%;
+    }
+
+    .hero {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+    }
+
+    .grid-3-cols {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .grid-3-cols.features {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        gap: 25px;
+        text-align: center;
+    }
 }
