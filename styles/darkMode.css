@@ -56,8 +56,24 @@ div#themeToggle {
     border-bottom: solid 1px var(--heavy-gray-color-p2);
 }
 
-.w-text-color {
-    color: var(--bg-lighter-color-p3);
+@media (max-width: 1024px) {
+    .w-text-color {
+        color: var(--bg-black-color);
+    }
+
+    div#themeToggle {
+        background-color: #7952b38a;
+    }
+}
+
+@media (min-width: 1025px) {
+    .w-text-color {
+        color: var(--bg-lighter-color-p3);
+    }
+
+    div#themeToggle {
+        background-color: #FFC107;
+    }
 }
 
 .d-text-color {

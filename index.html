@@ -14,31 +14,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/x-icon" href="images/file.enc" />
   <link rel="stylesheet" href="styles/style.css" />
-  <link rel="stylesheet" href="styles/responsive.css" />
   <link rel="stylesheet" href="styles/darkMode.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
   <title>mzughbor Portfolio!</title>
 </head>
 
 <body>
-  <header class="header">
-    <a href="#" id="header-logo">
-      <img class="logo lightMode active" alt="Mzughbor Logo" src="logos/lightMode-logo-purpule-transparent.gif">
-      <img class="logo darkMode" alt="Mzughbor Logo" src="logos/darkMode-logo-coloerd-transparent.gif">
-    </a>
-    <nav class="main-nav">    
-      <ul class="main-nav-list">
-        <div class="theme-toggle" id="themeToggle">
-          <img class="moon-icon active" src="images/moon-svgrepo-com.svg" alt="Moon Icon">
-          <img class="sun-icon " src="images/sun-2-svgrepo-com.svg" alt="Sun Icon">
+  <div class="full-header">
+    <header class="header">
+      <a href="#" id="header-logo">
+        <img class="logo lightMode active" alt="Mzughbor Logo" src="logos/lightMode-logo-purpule-transparent.gif">
+        <img class="logo darkMode" alt="Mzughbor Logo" src="logos/darkMode-logo-coloerd-transparent.gif">
+      </a>
+      <nav class="main-nav">    
+        <ul class="main-nav-list">
+          <div class="theme-toggle" id="themeToggle">
+            <img class="moon-icon active" src="images/moon-svgrepo-com.svg" alt="Moon Icon">
+            <img class="sun-icon " src="images/sun-2-svgrepo-com.svg" alt="Sun Icon">
+          </div>        
+          <li><a class="d-text-color main-nav-link" href="#links">Links</a></li>
+          <li><a class="d-text-color main-nav-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="d-text-color main-nav-link" href="#jump">Real Projects</a></li>
+          <li><a class="d-text-color main-nav-link" href="#experimental">Dummy Projects</a></li>
+          <li><a class="d-text-color main-nav-link nav-cta" target="_blank" href="https://wa.me/+201014674522">Contact me</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>        
-        <li><a class="d-text-color main-nav-link" href="#links">Links</a></li>
-        <li><a class="d-text-color main-nav-link" href="#testimonials">Testimonials</a></li>
-        <li><a class="d-text-color main-nav-link" href="#jump">Real Projects</a></li>
-        <li><a class="d-text-color main-nav-link" href="#experimental">Dummy Projects</a></li>
-        <li><a class="d-text-color main-nav-link nav-cta" target="_blank" href="https://wa.me/+201014674522">Contact me</a></li>
-      </ul>
-    </nav>
-  </header>
+      </nav>
+    </header>
+  </div>
 
   <div class="hero-container w-bg-color">
     <div class="container">
@@ -722,6 +729,7 @@
   <script src="./scripts/slidersLatestWork.js"></script>
   <script src="./scripts/displayData.js"></script>
   <script src="./scripts/darkMode.js"></script>
+  <script src="./scripts/responsive.js"></script>
   <script>
     document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>

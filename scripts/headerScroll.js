@@ -2,7 +2,7 @@
 /* making the header showing and desapering when scroll up and down...*/
 document.addEventListener("DOMContentLoaded", function () {
 
-    const header = document.querySelector(".header");
+    const header = document.querySelector(".full-header");
     let lastScrollTop = 0;
     const headerHeight = header.offsetHeight;
 
@@ -27,5 +27,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Prevent negative values
-    });    
+    });
 });

@@ -1,4 +1,23 @@
-/* media query */
+:root {
+    --main-color: #7952B3;
+    --accent-color: #FFC107;
+    --bg-color: #E1E8EB;
+    --text-color: #343A40;
+    --dark-text-color: #080808;
+    --main-color-p2: #8F43EE;
+    --accent-color-p2: #F0EB8D;
+    --heavy-gray-color-p2: #413543;
+    --dark-color-p2: #2D2727;
+    --bg-lighter-color-p3: #F5F5F5;
+    --bg-light-color-p3: #E8E2E2;
+    --bg-white-color: #FFFFFF;
+    --bg-black-color: #000000;
+    --bg-white-transparent: #ffffffe1;
+    --dark-black-transparent-box-shadow: #00000026;
+    --light-main-transparent-box-shadow: #6a37b74f;
+}
+
+/* media query 
 @media (max-width: 1230px) {
 
     .main-nav-link:link,
@@ -34,4 +53,60 @@
     .btn--big {
         font-size: 12.6px;
     }
+}
+*/
+
+/* Example scaling formula: clamp(min, ideal, max) */
+:root {
+    --fs-small: clamp(0.75rem, 1vw + 0.5rem, 1rem);
+    /* e.g. for footer, small buttons */
+    --fs-medium: clamp(.75rem, 1vw + 0.1rem, 2rem);
+    /* base text, paragraphs */
+    --fs-large: clamp(1.5rem, 2vw + 0.33rem, 1.60rem);
+    /* h2, h3 */
+    --fs-xlarge: clamp(2.5rem, 4vw + 1rem, 3rem);
+    /* h1 */
+}
+
+/* Hamburger icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #7952b38a;
+    transition: 0.3s;
+}
+
+body.lock-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+@media (max-width: 1024px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .main-nav-list {
+        position: absolute;
+        top: 4.8rem;
+        right: 0;
+        background: var(--accent-color);
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        padding: 20px;
+    }
+
+    .main-nav-list.active {
+        display: flex;
+    }
+
 }
