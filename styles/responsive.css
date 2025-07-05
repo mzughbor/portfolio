@@ -147,3 +147,5 @@ body.lock-scroll {
         text-align: center;
     }
 }
+
+@media (max-width: 576px) {}
