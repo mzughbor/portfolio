@@ -134,6 +134,7 @@ body.lock-scroll {
     .grid-3-cols {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
+        gap: 0;
     }
 }
 
@@ -148,4 +149,12 @@ body.lock-scroll {
     }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    #header-logo {
+        flex: 0 0 40%;
+    }
+
+    #hidden-now {
+        display: none;
+    }
+}
