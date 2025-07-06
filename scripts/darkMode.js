@@ -36,6 +36,7 @@ themeToggle.addEventListener('click', () => {
             element.style.backgroundColor = '#FFC107';
         });
 
+
     } else {
         sun.classList.remove('active');
         moon.classList.add('active');

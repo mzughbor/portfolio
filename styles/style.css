@@ -7,8 +7,6 @@ gray color : ??
     
     FONT SIZE SYSTEM (px)
     10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-    
-
 */
 
 :root {
@@ -28,6 +26,18 @@ gray color : ??
   --bg-white-transparent: #ffffffe1;
   --dark-black-transparent-box-shadow: #00000026;
   --light-main-transparent-box-shadow: #6a37b74f;
+}
+
+/* Example scaling formula: clamp(min, ideal, max) */
+:root {
+  --fs-small: clamp(0.75rem, 1vw + 0.5rem, 1rem);
+  /* e.g. for footer, small buttons */
+  --fs-medium: clamp(.75rem, 1vw + 0.1rem, 2rem);
+  /* base text, paragraphs */
+  --fs-large: clamp(1.5rem, 2vw + 0.33rem, 1.60rem);
+  /* h2, h3 */
+  --fs-xlarge: clamp(2.5rem, 4vw + 1rem, 3rem);
+  /* h1 */
 }
 
 * {
@@ -57,7 +67,6 @@ body {
 
 .container {
   width: 70vw;
-  /* 960px*/
   margin: 0 auto;
 }
 
@@ -65,7 +74,6 @@ body {
 .hero-container,
 .full-container {
   width: 85vw;
-  /* 1189px*/
 }
 
 .hero-container {
@@ -90,7 +98,6 @@ body {
   height: 4.8rem;
   border-bottom: solid 1px var(--heavy-gray-color-p2);
   transition: all 0.3s ease-in-out;
-
 }
 
 .header {
@@ -177,14 +184,12 @@ summary {
 
 h2 {
   margin-bottom: 48px;
-  font-size: 30px;
   letter-spacing: 0;
   text-shadow: 2px 22px 18px var(--dark-black-transparent-box-shadow);
   text-align: center;
 }
 
 h3 {
-  font-size: 24px;
   letter-spacing: 0;
 }
 
@@ -240,7 +245,6 @@ h3 {
 
 .text {
   color: var(--bg-lighter-color-p3);
-  font-size: 22px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -341,7 +345,6 @@ a.btn.textsmall:nth-child(2):hover {
 h1 {
   text-shadow: 2px 22px 22px var(--dark-black-transparent-box-shadow);
   margin-bottom: 32px;
-  font-size: 44px;
   line-height: 1.2;
   letter-spacing: -2px;
   text-align: center;
@@ -349,7 +352,6 @@ h1 {
 
 .header-text {
   margin-bottom: 24px;
-  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -376,7 +378,6 @@ h1 {
 
 .btn--big {
   padding: 16px;
-  font-size: 18px;
   margin: 10px;
   text-align: center;
   border-radius: 50px;
@@ -385,14 +386,12 @@ h1 {
 
 .btn--small {
   padding: 8px 12px;
-  font-size: 14px;
   border-radius: 16px;
   min-width: max-content;
 }
 
 .textsmall {
   padding: 12px;
-  font-size: 14px;
   margin: 10px;
   text-align: center;
   border-radius: 50px;
@@ -429,12 +428,10 @@ img {
 
 .features-title {
   margin-bottom: 16px;
-  font-size: 20px;
   line-height: 1.5;
 }
 
 .features-text {
-  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -456,9 +453,7 @@ img {
 
 .testimonial-box h2 {
   margin-bottom: 24px;
-  font-size: 36px;
 }
-
 
 .testimonial-box>h3,
 .testimonial-box>blockquote,
@@ -469,21 +464,13 @@ img {
 .testimonial-text {
   font-style: italic;
   margin-bottom: 24px;
-  font-size: 18px;
   line-height: 1.5;
   padding: 30px;
 }
 
 .testimonial-author {
-  font-size: 14px;
   margin-bottom: 4px;
-  /* padding-left: 15px; */
   padding-top: 15px;
-}
-
-.testimonial-job {
-  font-size: 12px;
-  /* padding-left: 15px; */
 }
 
 .latest-work {
@@ -549,7 +536,6 @@ h3 {
 footer {
   text-shadow: 3px 3px 3px var(--dark-black-transparent-box-shadow);
   text-transform: capitalize;
-  font-size: 16px;
   color: var(--bg-lighter-color-p3);
   background-color: var(--main-color);
   position: absolute;
@@ -559,7 +545,6 @@ footer {
 
 .footmz {
   max-width: 70vw;
-  /*960px*/
   padding: 48px 0;
   height: 40px;
   text-align: center;
@@ -587,7 +572,6 @@ footer {
   position: relative;
   /*flex: 1;*/
   max-width: 70vw;
-  /*960px*/
 }
 
 .slider-track {
@@ -611,7 +595,6 @@ footer {
   width: 100%;
   position: relative;
   max-width: 70vw;
-  /*960px*/
   /* Ensure the full width */
   justify-content: center;
 }
@@ -680,7 +663,6 @@ button {
   background-color: var(--main-color);
 }
 
-
 /* making js SliderLatest Work works for testimaonals section*/
 /* Adjust slide width dynamically */
 .slider-section[data-slides-to-show="1"] .slide {
@@ -738,13 +720,11 @@ button {
 }
 
 .doodle-card-content__date {
-  font-size: 0.875rem;
   color: var(--heavy-gray-color-p2);
   margin-bottom: 1rem;
 }
 
 .doodle-card-content__event {
-  font-size: 1rem;
   font-weight: 600;
   color: var(--dark-text-color);
   line-height: initial;
@@ -752,7 +732,6 @@ button {
 }
 
 .doodle-card-content__desc {
-  font-size: 0.9rem;
   color: var(--text-color);
   margin-top: 0.5rem;
   line-height: 1.4;
@@ -777,13 +756,7 @@ button {
   text-align: center;
 }
 
-
-
-
-
-
-
-/* === responsive.css === */
+/* === Responsive Font Size === */
 h1 {
   font-size: var(--fs-xlarge);
 }
@@ -813,11 +786,114 @@ h3,
   font-size: var(--fs-medium);
 }
 
-
 .testimonial-author,
 .testimonial-job,
 footer,
 .doodle-card-content__date,
 .doodle-card-content__desc {
   font-size: var(--fs-small);
+}
+
+
+
+
+
+
+
+
+/* === New Testimonials === */
+
+.testimonial-carousel {
+  position: relative;
+  text-align: center;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+  cursor: grab;
+}
+
+.testimonial {
+  flex: 0 0 50%;
+  margin: 0 10px;
+  background: #eee;
+  border-radius: 8px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  opacity: 0.7;
+  transform: scale(0.9);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.testimonial.active {
+  background: var(--bg-light-color-p3);
+  opacity: 1;
+  transform: scale(1);
+  cursor: default;
+  line-height: 1.5;
+}
+
+.testimonial .author {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.testimonial-person {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.testimonial .author-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial .author-info strong {
+  display: block;
+}
+
+.testimonial .author-info span {
+  font-size: var(--fs-small);
+  color: var(--heavy-gray-color-p2);
+}
+
+.carousel-dots {
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: var(--bg-light-color-p3);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: var(--main-color-p2);
+  border: 1px solid var(--dark-text-color)
+}
+
+.testimonial-review {
+  filter: grayscale(100%);
+  width: 50%;
+  height: auto;
+  border-radius: 0;
+  margin-right: 0;
 }

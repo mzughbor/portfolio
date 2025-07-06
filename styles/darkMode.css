@@ -1,4 +1,5 @@
 :root {
+    /*
     --main-color: #7952B3;
     --accent-color: #FFC107;
     --bg-color: #E1E8EB;
@@ -15,6 +16,8 @@
     --bg-white-transparent: #ffffffe1;
     --dark-black-transparent-box-shadow: #00000026;
     --light-main-transparent-box-shadow: #6a37b74f;
+    */
+    --light-main-humbarger-color: #7952b38a;
 }
 
 /* For Toggle the dark and light modes */
@@ -36,7 +39,7 @@ img.logo.active {
 div#themeToggle {
     padding: 5px;
     border-radius: 20px;
-    background-color: #7952b38a;
+    background-color: var(--light-main-humbarger-color);
     cursor: pointer;
 }
 
@@ -62,7 +65,7 @@ div#themeToggle {
     }
 
     div#themeToggle {
-        background-color: #7952b38a;
+        background-color: var(--light-main-humbarger-color);
     }
 }
 
@@ -72,7 +75,7 @@ div#themeToggle {
     }
 
     div#themeToggle {
-        background-color: #FFC107;
+        background-color: var(--accent-color);
     }
 }
 
