@@ -119,11 +119,14 @@ body.lock-scroll {
         gap: 25px;
     }
 
+    .textsmall {
+        padding: 4px;
+    }
 }
 
 @media (max-width: 768px) {
     .container-img {
-        width: 45%;
+        width: 50%;
     }
 
     .hero {
@@ -156,5 +159,13 @@ body.lock-scroll {
 
     #hidden-now {
         display: none;
+    }
+
+    .textsmall {
+        padding: 4px;
+    }
+
+    .container-img {
+        width: 60%;
     }
 }
