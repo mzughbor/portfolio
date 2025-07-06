@@ -117,3 +117,24 @@ body.lock-scroll {
         flex: 0 0 70%;
     }
 }
+
+
+
+/* ???  */
+@media (max-width: 576px) {
+    .slide {
+        flex: 0 0 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1024px) {
+    .slide {
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .slide {
+        flex: 0 0 33.33%;
+    }
+}

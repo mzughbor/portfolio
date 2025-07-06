@@ -10,6 +10,7 @@ const heroBg = document.querySelector('.hero-container');
 const bgGrid = document.getElementById('bg-grid');
 const fullContainerBg = document.querySelector('.full-container');
 const hamburgerSpan = document.querySelectorAll('.hamburger span');
+const testimonialSection = document.getElementById('testimonials');
 
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme');
@@ -35,7 +36,8 @@ themeToggle.addEventListener('click', () => {
         hamburgerSpan.forEach(element => {
             element.style.backgroundColor = '#FFC107';
         });
-
+        testimonialSection.classList.add('adaptive-bg-black');
+        testimonialSection.classList.remove('adaptive-bg-white');
 
     } else {
         sun.classList.remove('active');
@@ -58,5 +60,7 @@ themeToggle.addEventListener('click', () => {
         hamburgerSpan.forEach(element => {
             element.style.backgroundColor = '#7952b38a';
         });
+        testimonialSection.classList.add('adaptive-bg-white');
+        testimonialSection.classList.remove('adaptive-bg-black');
     }
 });

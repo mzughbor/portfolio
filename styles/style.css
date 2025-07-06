@@ -179,7 +179,8 @@ body {
 
 section,
 summary {
-  margin: 48px 0;
+  margin: 98px 0;
+  /*good / bad practice 48px 0;*/
 }
 
 h2 {
@@ -802,6 +803,18 @@ footer,
 
 
 /* === New Testimonials === */
+
+.adaptive-bg-white {
+  background-color: var(--bg-white-color);
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+
+.adaptive-bg-black {
+  background-color: var(--bg-black-color);
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
 
 .testimonial-carousel {
   position: relative;
