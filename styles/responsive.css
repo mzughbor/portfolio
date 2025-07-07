@@ -67,7 +67,7 @@ body.lock-scroll {
     .grid-3-cols {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-        gap: 0;
+        gap: 10px;
     }
 
     .testimonial .author {
@@ -101,10 +101,6 @@ body.lock-scroll {
         flex: 0 0 40%;
     }
 
-    #hidden-now {
-        display: none;
-    }
-
     .textsmall {
         padding: 4px;
     }
@@ -116,25 +112,20 @@ body.lock-scroll {
     .testimonial {
         flex: 0 0 70%;
     }
-}
 
-
-
-/* ???  */
-@media (max-width: 576px) {
-    .slide {
-        flex: 0 0 100%;
+    h2,
+    .testimonial-box h2 {
+        line-height: 1.25;
     }
+
 }
 
-@media (min-width: 577px) and (max-width: 1024px) {
-    .slide {
-        flex: 0 0 50%;
+@media (max-width: 360px) {
+    .grid-3-cols {
+        grid-template-columns: repeat(1, 1fr);
     }
-}
 
-@media (min-width: 1025px) {
-    .slide {
-        flex: 0 0 33.33%;
+    .btn--big {
+        min-width: unset;
     }
 }
