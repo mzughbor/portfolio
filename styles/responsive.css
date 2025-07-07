@@ -120,7 +120,7 @@ body.lock-scroll {
 
 }
 
-@media (max-width: 360px) {
+@media (max-width: 390px) {
     .grid-3-cols {
         grid-template-columns: repeat(1, 1fr);
     }

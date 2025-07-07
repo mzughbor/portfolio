@@ -72,8 +72,10 @@ body {
 
 .header,
 .hero-container,
-.full-container {
+.full-container,
+.clear-full-container {
   width: 85vw;
+  margin: 0 auto;
 }
 
 .hero-container {
@@ -796,14 +798,7 @@ footer,
 }
 
 
-
-
-
-
-
-
 /* === New Testimonials === */
-
 .adaptive-bg-white {
   background-color: var(--bg-white-color);
   border-top: 1px solid #000000;
@@ -909,4 +904,56 @@ footer,
   height: auto;
   border-radius: 0;
   margin-right: 0;
+}
+
+/* === moving bar -/ like the news Bar idea === */
+.main-trackers-container {
+  background: var(--bg-white-transparent);
+  color: var(--bg-black-color);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 50px 0;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.marquee {
+  display: flex;
+  /*animation: scroll-left 10s linear infinite;*/
+}
+
+.track {
+  padding-right: 100px;
+  animation: scroll 6s linear infinite;
+}
+
+.track-item,
+.track {
+  display: flex;
+  gap: 5%;
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+  gap: 125px;
+}
+
+.track-item {
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid var(--text-color);
+  border-radius: 18px;
+  padding: 10px;
+  color: var(--text-color);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }

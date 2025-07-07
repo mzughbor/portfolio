@@ -11,6 +11,8 @@ const bgGrid = document.getElementById('bg-grid');
 const fullContainerBg = document.querySelector('.full-container');
 const hamburgerSpan = document.querySelectorAll('.hamburger span');
 const testimonialSection = document.getElementById('testimonials');
+const mainTrackersContainer = document.getElementById('main-trackers-container');
+const trackItems = document.querySelectorAll('.track-item');
 
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme');
@@ -38,6 +40,12 @@ themeToggle.addEventListener('click', () => {
         });
         testimonialSection.classList.add('adaptive-bg-black');
         testimonialSection.classList.remove('adaptive-bg-white');
+        mainTrackersContainer.classList.add('d-bg-color');
+        mainTrackersContainer.classList.remove('w-bg-color');
+        trackItems.forEach(element => {
+            element.classList.add('d-bg-color');
+            element.classList.remove('w-bg-color');
+        });
 
     } else {
         sun.classList.remove('active');
@@ -62,5 +70,13 @@ themeToggle.addEventListener('click', () => {
         });
         testimonialSection.classList.add('adaptive-bg-white');
         testimonialSection.classList.remove('adaptive-bg-black');
+        mainTrackersContainer.classList.add('w-bg-color');
+        mainTrackersContainer.classList.remove('d-bg-color');
+        /*
+        trackItems.forEach(element => {
+            element.classList.add('w-bg-color');
+            element.classList.remove('d-bg-color');
+        });
+        */
     }
 });

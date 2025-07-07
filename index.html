@@ -96,9 +96,6 @@
         <a class="btn btn--big" target="_blank" href="https://www.codewars.com/users/mzughbor">Codewars.com</a>
         <a class="btn btn--big" target="_blank" href="https://www.freecodecamp.org/mzughbor">Freecodecamp.org</a>
         <a class="btn btn--big" target="_blank" href="https://github.com/mzughbor">Github.com</a>
-        <a class="btn btn--big" target="_blank" href="https://instgram.com/mzugweb">Instagram.com</a>
-        <a class="btn btn--big" target="_blank" href="https://facebook.com/mzughbor">Facebook.com</a>
-        <a class="btn btn--big" target="_blank" href="https://twitter.com/mzughbor">Twitter.com</a>
         <a class="btn btn--big" target="_blank" href="https://github.com/mzughbor/resume-html-css-only">Back to
           repository</a>
         <a class="btn btn--big" target="_blank" href="https://linktr.ee/mzughbor">Back to Linktree</a>
@@ -172,14 +169,46 @@
   </section>
 
   <section>
-    <h2>Currently following <a target="_blank" href="https://axsos.academy/full-stack-developer/">Axsos Bootcamp</a> +
-      Self recovery projects</h2>
-    <div class="grid-1-cols soical">
-      <a class="btn btn--big" target="_blank" href="https://github.com/mzughbor?tab=repositories">Visit Latest
-        Repositories and watch some code.</a>
-      <div></div>
+    <div class="clear-full-container">
+      <h2>Currently following <a target="_blank" href="https://axsos.academy/full-stack-developer/">Axsos Bootcamp</a> +
+        Self recovery projects</h2>
+      <div class="grid-1-cols soical">
+        <a class="btn btn--big" target="_blank" href="https://github.com/mzughbor?tab=repositories">Visit Latest
+          Repositories and watch some code.</a>
+        <div></div>
+      </div>
     </div>
   </section>
+
+  <section id="movingNewsBar" class="adaptive-bg-white moving-bar">
+    <div id="main-trackers-container" class="main-trackers-container">
+      <div class="marquee">
+        <div class="track">
+          <div class="track-item">
+            <svg width="24" height="24" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9-9 9-9-9z" fill="#777BB4"/></svg>
+            <span>PHP / WordPress</span>
+          </div>
+          <div class="track-item">
+            <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 2L15 8H9L12 2ZM12 22L9 16H15L12 22Z" fill="#306998"/></svg>
+            <span>Python Stack Development</span>
+          </div>
+          <div class="track-item">
+            <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#3FA037" stroke-width="2" fill="none"/></svg>
+            <span>MERN Stack</span>
+          </div>
+          <div class="track-item">
+            <svg width="24" height="24" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" stroke="#F05454" stroke-width="2" fill="none"/></svg>
+            <span>Design / UI</span>
+          </div>
+          <div class="track-item">
+            <svg width="24" height="24" viewBox="0 0 24 24"><path d="M4 4h16v16H4z" stroke="#000" stroke-width="2" fill="none"/></svg>
+            <span>Web Development</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <div class="container">
 
@@ -639,6 +668,7 @@
   <script src="./scripts/displayData.js"></script>
   <script src="./scripts/darkMode.js"></script>
   <script src="./scripts/responsive.js"></script>
+  <script src="./scripts/movingBar.js"></script>
   <script>
     document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>
