@@ -43,8 +43,8 @@ themeToggle.addEventListener('click', () => {
         mainTrackersContainer.classList.add('d-bg-color');
         mainTrackersContainer.classList.remove('w-bg-color');
         trackItems.forEach(element => {
-            element.classList.add('d-bg-color');
-            element.classList.remove('w-bg-color');
+            element.style.backgroundColor = '#F0EB8D';
+            //element.classList.remove('w-bg-color');
         });
 
     } else {
@@ -72,11 +72,10 @@ themeToggle.addEventListener('click', () => {
         testimonialSection.classList.remove('adaptive-bg-black');
         mainTrackersContainer.classList.add('w-bg-color');
         mainTrackersContainer.classList.remove('d-bg-color');
-        /*
+
         trackItems.forEach(element => {
-            element.classList.add('w-bg-color');
-            element.classList.remove('d-bg-color');
+            element.style.backgroundColor = '#F0EB8D';
         });
-        */
+
     }
 });
