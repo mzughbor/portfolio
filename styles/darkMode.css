@@ -83,6 +83,11 @@ div#themeToggle {
     color: var(--dark-text-color);
 }
 
+.yellow-bg-color {
+    background-color: var(--accent-color-p2);
+}
+
+
 .w-bg-color {
     background-color: var(--bg-light-color-p3);
 }
@@ -99,4 +104,17 @@ div#themeToggle {
 .background-grid-dark {
     background: radial-gradient(circle at center, #fff8dc00 60%, var(--heavy-gray-color-p2) 100%),
         conic-gradient(from 90deg at 1px 1px, #00000000 90deg, #36332e 0) 3% 7% / 48px 48px;
+}
+
+/* === New Testimonials === */
+.adaptive-bg-white {
+    background-color: var(--bg-white-color);
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.adaptive-bg-black {
+    background-color: var(--bg-black-color);
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
 }

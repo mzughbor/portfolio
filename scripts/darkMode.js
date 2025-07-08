@@ -13,6 +13,7 @@ const hamburgerSpan = document.querySelectorAll('.hamburger span');
 const testimonialSection = document.getElementById('testimonials');
 const mainTrackersContainer = document.getElementById('main-trackers-container');
 const trackItems = document.querySelectorAll('.track-item');
+const latestWork = document.getElementById('jump');
 
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme');
@@ -36,16 +37,20 @@ themeToggle.addEventListener('click', () => {
         fullContainerBg.classList.remove('w-bg-color');
         //themeToggle.style.backgroundColor = '#FFC107';
         hamburgerSpan.forEach(element => {
-            element.style.backgroundColor = '#FFC107';
+            element.style.backgroundColor = '#F0EB8D';
         });
         testimonialSection.classList.add('adaptive-bg-black');
         testimonialSection.classList.remove('adaptive-bg-white');
         mainTrackersContainer.classList.add('d-bg-color');
         mainTrackersContainer.classList.remove('w-bg-color');
         trackItems.forEach(element => {
-            element.style.backgroundColor = '#F0EB8D';
-            //element.classList.remove('w-bg-color');
+            element.style.border = '1px solid var(--main-color-p2)';
+            element.style.color = 'var(--bg-white-color)';
+            element.style.backgroundColor = '#7952b38a';
+
         });
+        latestWork.classList.add('adaptive-bg-black');
+        latestWork.classList.remove('adaptive-bg-white');
 
     } else {
         sun.classList.remove('active');
@@ -74,8 +79,13 @@ themeToggle.addEventListener('click', () => {
         mainTrackersContainer.classList.remove('d-bg-color');
 
         trackItems.forEach(element => {
-            element.style.backgroundColor = '#F0EB8D';
+            element.style.border = '1px solid var(--main-color-p2)';
+            element.style.color = '#6700ff';//'var(--main-color)';
+            element.style.backgroundColor = 'var(--light-main-transparent-box-shadow)';
+
         });
+        latestWork.classList.add('adaptive-bg-white');
+        latestWork.classList.remove('adaptive-bg-black');
 
     }
 });

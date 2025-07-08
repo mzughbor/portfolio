@@ -26,6 +26,7 @@ gray color : ??
   --bg-white-transparent: #ffffffe1;
   --dark-black-transparent-box-shadow: #00000026;
   --light-main-transparent-box-shadow: #6a37b74f;
+  --text-main-color-dark: #6700ff;
 }
 
 /* Example scaling formula: clamp(min, ideal, max) */
@@ -481,6 +482,10 @@ img {
   padding-top: 15px;
 }
 
+.latest-work-section {
+  padding: 60px 0;
+}
+
 .latest-work {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -633,7 +638,7 @@ button {
 .dots {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .dot {
@@ -799,17 +804,6 @@ footer,
 
 
 /* === New Testimonials === */
-.adaptive-bg-white {
-  background-color: var(--bg-white-color);
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-}
-
-.adaptive-bg-black {
-  background-color: var(--bg-black-color);
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
-}
 
 .testimonial-carousel {
   position: relative;
@@ -907,55 +901,58 @@ footer,
 }
 
 /* === moving bar -/ like the news Bar idea === */
+
+.moving-bar {
+  margin-top: 45px;
+  padding: 30px 0;
+}
+
 .main-trackers-container {
-  background: var(--bg-white-transparent);
+  background: var(--bg-light-color-p3);
   color: var(--bg-black-color);
   overflow: hidden;
   white-space: nowrap;
-  padding: 50px 0;
+  padding: 30px 0;
   z-index: 10;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  background-color: var(--bg-lighter-color-p3);
+  position: relative;
 }
 
 .marquee {
   display: flex;
-  /*animation: scroll-left 10s linear infinite;*/
-}
-
-.track {
-  padding-right: 100px;
-  animation: scroll 6s linear infinite;
-}
-
-.track-item,
-.track {
-  display: flex;
-  gap: 5%;
-}
-
-.marquee {
   overflow: hidden;
   position: relative;
-  gap: 125px;
+}
+
+.track,
+.clone {
+  gap: 20px;
+  display: flex;
+  flex-shrink: 0;
+  animation-name: scroll-marquee;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+  padding-right: 10px;
 }
 
 .track-item {
+  display: flex;
   align-items: center;
   gap: 0.5rem;
-  border: 2px solid var(--text-color);
+  border: 1px solid var(--main-color-p2);
   border-radius: 18px;
   padding: 10px;
-  color: var(--text-color);
-  background-color: var(--accent-color-p2);
+  color: var(--text-main-color-dark);
+  background-color: var(--light-main-transparent-box-shadow);
+  white-space: nowrap;
 }
 
-@keyframes scroll {
+@keyframes scroll-marquee {
   from {
     transform: translateX(0%);
   }
 
   to {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
