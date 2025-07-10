@@ -18,7 +18,7 @@ const sectionDP = document.getElementById('experimental');
 
 function updateSlidesToShow() {
     const width = window.innerWidth;
-    if (width <= 576) {
+    if (width <= 900) { // 576
         sectionLW.setAttribute("data-slides-to-show", "1");
         sectionDP.setAttribute("data-slides-to-show", "1");
     } else if (width <= 1024) {

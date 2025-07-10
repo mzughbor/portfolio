@@ -834,6 +834,7 @@ footer,
   transform: scale(0.9);
   transition: all 0.5s ease;
   cursor: pointer;
+  line-height: 1.5;
 }
 
 .testimonial.active {

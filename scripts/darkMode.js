@@ -14,6 +14,7 @@ const testimonialSection = document.getElementById('testimonials');
 const mainTrackersContainer = document.getElementById('main-trackers-container');
 const trackItems = document.querySelectorAll('.track-item');
 const latestWork = document.getElementById('jump');
+const darkBgHamburger = document.getElementById('main-nav-list');
 
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme');
@@ -51,6 +52,8 @@ themeToggle.addEventListener('click', () => {
         });
         latestWork.classList.add('adaptive-bg-black');
         latestWork.classList.remove('adaptive-bg-white');
+        darkBgHamburger.classList.remove('main-nav-list-w-bg');
+        darkBgHamburger.classList.add('main-nav-list-d-bg');
 
     } else {
         sun.classList.remove('active');
@@ -86,6 +89,8 @@ themeToggle.addEventListener('click', () => {
         });
         latestWork.classList.add('adaptive-bg-white');
         latestWork.classList.remove('adaptive-bg-black');
+        darkBgHamburger.classList.remove('main-nav-list-d-bg');
+        darkBgHamburger.classList.add('main-nav-list-w-bg');
 
     }
 });
