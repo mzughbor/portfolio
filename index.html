@@ -1,693 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="images/file.enc" />
-  <link rel="stylesheet" href="styles/style.css" />
-  <link rel="stylesheet" href="styles/darkMode.css" />
-  <link rel="stylesheet" href="styles/responsive.css" />
-  <title>mzughbor Portfolio!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>mzughbor - Full-Stack Developer | React, Django, Python Expert</title>
+  <meta name="title" content="mzughbor - Full-Stack Developer | React, Django, Python Expert">
+  <meta name="description" content="Mahmoud Zughbor - Full-Stack Developer with 3+ years of experience. Expert in React, Django, Python, WordPress, and API development. Building scalable web applications for startups and businesses.">
+  <meta name="keywords" content="full-stack developer, React developer, Django developer, Python developer, WordPress developer, web developer, software developer, API development, frontend developer, backend developer, Mahmoud Zughbor, mzughbor">
+  <meta name="author" content="Mahmoud Zughbor">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mzughbor.github.io/portfolio/">
+  <meta property="og:title" content="mzughbor - Full-Stack Developer">
+  <meta property="og:description" content="Full-Stack Developer with 3+ years of experience. Expert in React, Django, Python, WordPress, and API development.">
+  <meta property="og:image" content="https://mzughbor.github.io/portfolio/images/cover.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://mzughbor.github.io/portfolio/">
+  <meta property="twitter:title" content="mzughbor - Full-Stack Developer">
+  <meta property="twitter:description" content="Full-Stack Developer with 3+ years of experience. Expert in React, Django, Python, WordPress, and API development.">
+  <meta property="twitter:image" content="https://mzughbor.github.io/portfolio/images/cover.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/file.enc">
+  
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS with cache busting - Update version number when making CSS changes -->
+  <link rel="stylesheet" href="styles/main.css?v=1.0.6">
+  
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mahmoud Zughbor",
+    "alternateName": "mzughbor",
+    "url": "https://mzughbor.github.io/portfolio",
+    "image": "https://mzughbor.github.io/portfolio/images/cover.jpg",
+    "jobTitle": "Full-Stack Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    },
+    "knowsAbout": ["React", "Django", "Python", "JavaScript", "WordPress", "PHP", "API Development", "Web Development"],
+    "sameAs": [
+      "https://www.linkedin.com/in/mzughbor",
+      "https://github.com/mzughbor"
+    ]
+  }
+  </script>
 </head>
-
-<body>
-  <div class="full-header">
-    <header class="header">
-      <a href="#" id="header-logo">
-        <img class="logo lightMode active" alt="Mzughbor Logo" src="logos/lightMode-logo-purpule-transparent.gif">
-        <img class="logo darkMode" alt="Mzughbor Logo" src="logos/darkMode-logo-coloerd-transparent-v02.gif">
-      </a>
-      <nav class="main-nav">
-        <ul id="main-nav-list" class="main-nav-list-w-bg main-nav-list">
-          <div class="theme-toggle" id="themeToggle">
-            <img class="moon-icon active" src="images/moon-svgrepo-com.svg" alt="Moon Icon">
-            <img class="sun-icon " src="images/sun-2-svgrepo-com.svg" alt="Sun Icon">
-          </div>        
-          <li><a class="d-text-color main-nav-link" href="#links">Links</a></li>
-          <li><a class="d-text-color main-nav-link" href="#testimonials">Testimonials</a></li>
-          <li><a class="d-text-color main-nav-link" href="#jump">Real Projects</a></li>
-          <li><a class="d-text-color main-nav-link" href="#experimental">Dummy Projects</a></li>
-          <li><a class="d-text-color main-nav-link nav-cta" target="_blank" href="https://wa.me/+201014674522">Contact me</a></li>
+<body class="light-mode">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">mzughbor</a>
+      <ul class="nav-menu">
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#client-work" class="nav-link">Client Work</a></li>
+        <li><a href="#special" class="nav-link">Journey</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#tools" class="nav-link">Tools</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <span class="theme-icon moon-icon">🌙</span>
+            <span class="theme-icon sun-icon">☀️</span>
+          </button>
+        </li>
         </ul>
-        <div class="hamburger">
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
           <span></span>
           <span></span>
           <span></span>
+      </button>
         </div>        
       </nav>
-    </header>
-  </div>
 
-  <div class="hero-container w-bg-color">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Full-Stack Developer
+          <span class="hero-subtitle">Building modern web applications</span>
+        </h1>
+        <p class="hero-description">
+          I craft scalable solutions with React, Django, and modern APIs. 
+          Experienced in building products from concept to deployment, 
+          with a focus on clean code and user experience.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="files/mzughbor-Resume.pdf" class="btn btn-secondary" target="_blank">View Resume</a>
+        </div>
+        </div>
+  </div>
+    </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
     <div class="container">
-      <h1> Hi there ... I'm “ Mahmoud Zughbor ”</h1>
-      <div class="hero">
-        <div class="header-text-box">
-          <p class="header-text">
-            I'm a Multimedia and Web Development graduate from <a target="_blank"
-              href="https://www.iugaza.edu.ps/en">IUG</a> / <a target="_blank"
-              href="files/bachelor-degree-certificate.pdf">(class of 2022).</a>
-            Now I'm diving into backend technologies, aiming to become a full stack developer.
-            I started with <mark class="hero-words-color">WordPress CMS</mark> three years ago and still use it to help
-            Arabian clients build and manage
-            their sites from scratch. I'm hoping to find more time to keep learning <mark
-              class="hero-words-color">Django and python</mark>. I enjoy building
-            <mark class="hero-words-color">APIs</mark> for mobile apps and scraping data with Python.<br>
-            I often use <mark class="hero-words-color">Jquery</mark> in WordPress, but my JS skills are
-            solid and growing along this long web journey.
+      <div class="section-header">
+        <p class="section-label">Projects</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-description">
+          A selection of projects showcasing my capabilities in full-stack development, 
+          API design, and modern web technologies.
+            </p>
+          </div>
+
+      <div class="projects-grid featured-projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/food-ordering-platform-from-html-css-to-django.png" alt="Food Ordering Platform" loading="lazy">
+            </div>            
+          <div class="project-content">
+            <h3 class="project-title">Food Ordering Platform – Full Stack Delivery System</h3>
+            <p class="project-description">
+              Extended the OmniFood single-page HTML/CSS project into a complete full-stack food ordering and delivery platform. 
+              Built with Django backend, Bootstrap5 frontend, real-time cart updates (AJAX), multi-admin restaurant management, 
+              order tracking, delivery dashboard, and REST API endpoints for mobile app integration.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Django</span>
+              <span class="tag">Python</span>
+              <span class="tag">Bootstrap5</span>
+              <span class="tag">REST API</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://mzughbor.duckdns.org/food-delivery-pro/" class="project-link" target="_blank">Live Demo</a>
+              <a href="https://github.com/mzughbor/Food-Ordering-Platform" class="project-link" target="_blank">GitHub</a>
+              <a href="https://mzughbor.github.io/recovery-p-c01-s08-omnifood-project-responsive-version/index.html" class="project-link" target="_blank">Original OmniFood</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/vyvlive-site.png" alt="Vyvlive Headless Platform" loading="lazy">
+            </div>            
+          <div class="project-content">
+            <h3 class="project-title">Vyvlive – Headless Live Site Platform</h3>
+            <p class="project-description">
+              A multilingual, SEO-ready headless web platform with React + Tailwind frontend fully decoupled from Django REST API backend. 
+              Features content delivery flow, server-side rendering for SEO optimization, multi-language support, and scalable architecture 
+              for high-performance content delivery.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Django REST API</span>
+              <span class="tag">SSR</span>
+              <span class="tag">Headless CMS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://vyvlive.com/ar" class="project-link" target="_blank">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header">
+        <p class="about-label">About Me</p>
+        <h2 class="about-main-title">I solve real problems and deliver clean results.</h2>
+        <p class="about-main-description">
+          I'm a seasoned software developer with over three years of experience working with startups and small businesses, 
+          delivering production-ready applications and scalable solutions. Previously worked with WordPress and custom PHP solutions, 
+          helping Arabian clients build and manage their sites from scratch. Today I focus on modern full-stack development with React, 
+          Django, and API-driven architectures. I thrive on tackling complex challenges and transforming them into elegant, efficient solutions 
+          that are built for scale from day one.
+        </p>
+              </div>
+
+      <div class="about-expertise">
+        <div class="expertise-item">
+          <h3 class="expertise-title">Full-Stack Expertise</h3>
+          <p class="expertise-description">
+            Proficient in both front-end and back-end technologies, I build seamless, integrated systems. From crafting intuitive UIs with modern 
+            frameworks to architecting resilient server-side logic and databases, I ensure a cohesive and high-performing final product.
           </p>
-          <div class="grid-2-cols">
-            <a class="btn textsmall" id="cv-btn" href="files/mzughbor-Resume.pdf">View my CV</a>
-            <a class="btn textsmall" id="jump-btn" href="#jump">Or Jump to Latest Work</a>
-          </div>
-        </div>
-
-        <div id="bg-grid" class="background-grid background-grid-light">
-          <figure class="container-img">
-            <img class="image" src="images/IMG_20230417_222639.jpg" alt="myprittyface" />
-            <figcaption class="overlay">
-              <p class="text">
-                What you want??<br />go to my <mark class="red">cv</mark> and have a look, <mark class="red">
-                  weirdo!!</mark>
-              </p>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
+                </div>
+        <div class="expertise-item">
+          <h3 class="expertise-title">Pragmatic Problem-Solving</h3>
+          <p class="expertise-description">
+            I excel at breaking down complex requirements into manageable tasks. My approach is rooted in systematic debugging, clean code principles, 
+            and a deep understanding of system architecture, allowing for rapid iteration and reliable delivery in real-world scenarios.
+          </p>
+              </div>
+        <div class="expertise-item">
+          <h3 class="expertise-title">Built for Scale</h3>
+          <p class="expertise-description">
+            My development philosophy prioritizes performance and scalability. I design and implement reliable, fast infrastructure capable of handling 
+            high-volume traffic and complex workflows, ensuring applications are ready for growth from day one.
+          </p>
+                </div>
+              </div>
     </div>
-  </div>
+  </section>
 
-  <div class="container">
-    <section id="links">
-      <h2>My accounts links!</h2>
-      <div class="grid-3-cols soical">
-        <a class="btn btn--big" target="_blank" href="https://www.linkedin.com/in/mzughbor">Linkedin.com</a>
-        <a class="btn btn--big" target="_blank" href="https://www.mostaql.com/u/mzughbor">Mostaql.com</a>
-        <a class="btn btn--big" target="_blank" href="https://www.freelancer.com/u/mzughbor">Freelancer.com</a>
-        <a class="btn btn--big" target="_blank" href="https://www.codewars.com/users/mzughbor">Codewars.com</a>
-        <a class="btn btn--big" target="_blank" href="https://www.freecodecamp.org/mzughbor">Freecodecamp.org</a>
-        <a class="btn btn--big" target="_blank" href="https://github.com/mzughbor">Github.com</a>
-        <a class="btn btn--big" target="_blank" href="https://github.com/mzughbor/portfolio">Back to repository</a>
-        <a class="btn btn--big" target="_blank" href="https://linktr.ee/mzughbor">Back to Linktree</a>
-        <div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <div class="full-container w-bg-color ">
+  <!-- Client Work Section -->
+  <section class="client-work" id="client-work">
     <div class="container">
-      <section>
-        <h2>What makes me special?</h2>
-        <div class="grid-3-cols features">
-
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="features-icon" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-            </svg>
-            <p class="features-title">
-              <strong>Programmer/back-end developments </strong>
-            </p>
-            <p class="features-text">
-              Programming languages (Python, PHP and Java-Script) Popular Web languages with great knowledge with (HTML and
-              CSS and Bootstrap, Jquery)...
-            </p>
-          </div>
-
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="features-icon" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-            </svg>
-            <p class="features-title">
-              <strong>Dreamer & Creative Designer</strong>
-            </p>
-            <p class="features-text">
-              I can use any page Builder you want for web Like Elementor and son on, Plus that when it's come to any Adobe
-              Creative Suite programs like (Photoshop and Illustrator)...of course.
-            </p>
-          </div>
-
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="features-icon" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-            </svg>
-            <p class="features-title">
-              <strong>Flexable and vary ethical</strong>
-            </p>
-            <p class="features-text">
-              Being vary flexable to learn any thing new is a gift! So I can be fast when it's come to additional problems
-              and very ethical with my clients.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
+      <div class="section-header">
+        <p class="section-label">Client Work</p>
+        <h2 class="section-title">WordPress & Custom Solutions</h2>
+        <p class="section-description">
+          Professional WordPress development projects with custom plugin development, 
+          multilingual support, and tailored solutions for clients.
+        </p>
   </div>
 
-  <section id="testimonials" class="adaptive-bg-white testimonial-carousel">
-    <h2>Previous Clients Testimonials...</h2>
-    <div class="carousel-wrapper">
-      <div class="carousel-track"></div>
-    </div>
-    <div class="carousel-dots"></div>
-  </section>
-
-  <section>
-    <div class="clear-full-container">
-      <h2>Currently following self recovery projects</h2>
-      <div class="grid-1-cols soical">
-        <a class="btn btn--big" target="_blank" href="https://github.com/mzughbor?tab=repositories">
-          Visit Latest Repositories and watch some code.</a>
-        <div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="adaptive-bg-white latest-work-section slider-section" id="jump" data-slides-to-show="1"> 
-
-    <h2>My latest works...</h2>
-    <!--old-shape-look-like-3-columns... <div class="grid-2-cols">-->
-    <div class="slider-wrapper">
-      <div class="slider-controls">
-        <button class="prev">❮</button>
-        <div class="slider-container">
-          <div class="slider-track">
-
-            <figure class="slide latest-work gsg-js-project">
-              <a target="_blank" href="https://academyik.com/"><img
-                  src="images/نقطة المعرفة الدولية للتصميم والتطوير.png"
-                  alt="موقع نقطة المعرفة الدولية للتصميم والتطوير" /></a>
-              <div class="latest-work-box">
-                <h3>
-                  Creating Site using <a target="_blank" href="https://www.ar-themes.com">sharekah </a>theme
-                </h3>
-                <ul class="work-details">
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                    </svg>
-                    <span>We build the site using widgets from theme, & </span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                    </svg>
-                    <span>We extend that by creating <a target="_blank"
-                        href="https://github.com/mzughbor/Sharekah-supplementary-plugin-">plugin </a> </span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
-                    <span> to Support more pages to fucnstion just like home page. <a href=""
-                        target="_blank"></a></span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <a target="_blank" href="https://academyik.com/"><span>Go to site Now!</span></a>
-                  </li>
-                </ul>
-                <div class="">
-                  <a target="_blank" href="https://academyik.com/" class="btn btn--small">Have a look!</a>
-                </div>
-              </div>
-            </figure>
-
-            <figure class="slide latest-work gsg-js-project">
-              <a target="_blank" href="images/homePage-vastuastrology.png">
-                <img src="images/cover-vastuastrology-site.png" alt="work-img" />
-              </a>
-              <div class="latest-work-box">
-                <h3>
-                  Design Vastuastrology Site, Using Astra starter theme.
-                </h3>
-                <ul class="work-details">
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                    </svg>
-                    <span>With Elemntor and main helper essential plugins.</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                    </svg>
-                    <span>Review <a target="_blank" href="images/homePage-vastuastrology.png">Home Page.</a></span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
-                    <span>Review <a target="_blank" href="images/about-us-vastuastrology.png">About-Us Page.</a></span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <span>View <a target="_blank" href="images/services-page-vastuastrology.png">Services page</a>, & <a
-                        target="_blank" href="images/contact-us-vastuastrology.png">Contact-Us page.</span>
-                  </li>
-                </ul>
-                <div class="">
-                  <a target="_blank" href="https://www.appliedvastu.com/" class="btn btn--small">Have a look!</a>
-                </div>
-              </div>
-            </figure>
-
-            <figure class="slide latest-work gsg-js-project">
-              <a target="_blank" href="images/دنتال هوم مكة - الصفحه الرئيسية -.jpg"><img
-                  src="images/rsz_screenshot_761.png" alt="dentalhome-makkah-work-img" /></a>
-              <div class="latest-work-box">
-                <h3>
-                  Redesigning Dental Clinic Site
-                </h3>
-                <ul class="work-details">
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                    </svg>
-                    <span>Using Elementor and Trusmile Theme</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                    </svg>
-                    <span>Creating Emails Auto Response, With Email Templates.</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
-                    <span>+ Using <a target="_blank"
-                        href="https://codecanyon.net/item/booked-appointments-appointment-booking-for-wordpress/9466968">Booked
-                      </a>Plugin for reservations.</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <a target="_blank" href="images/دنتال هوم مكة - الصفحه الرئيسية -.jpg"><span>Go to site
-                        Now!</span></a>
-                  </li>
-                </ul>
-                <div class="">
-                  <a target="_blank" href="https://dentalhome-clinic.com/?lang=ar" class="btn btn--small">Have a
-                    look!</a>
-                </div>
-              </div>
-            </figure>
-
-            <figure class="slide latest-work gsg-js-project">
-              <a target="_blank" href="https://stadkora.com/"><img src="images/rsz_screenshot_760.png"
-                  alt="StadKora-work-img" /></a>
-              <div class="latest-work-box">
-                <h3>
-                  Creating Football-News Site from Scratch.
-                </h3>
-                <ul class="work-details">
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                    </svg>
-                    <span>Using Blocks from Bimber theme and Creating widgets,</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                    </svg>
-                    <span>for Football matches using <a target="_blank"
-                        href="https://anwppro.userecho.com/communities/1-football-leagues">anwppro football's </a>
-                      plugin, See new Widget <a target="_blank"
-                        href="https://youtube.com/shorts/4NozK8MnvG4?feature=share">shorts video idea</a>.</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
-                    <span>Supported with Ajax requests and dealing with Api from <a target="_blank"
-                        href="https://www.api-football.com">api-football.com</a></span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <a target="_blank" href="https://stadkora.com"><span>Go to site Now!</span></a>
-                  </li>
-                </ul>
-                <div class="">
-                  <a target="_blank" href="images/Green-StadKora.com.png" class="btn btn--small">Have a look!</a>
-                </div>
-              </div>
-            </figure>
-
-            <figure class="slide latest-work gsg-js-project">
-              <a target="_blank" href="https://interludeksa.com"><img src="images/rsz_1interludeksa-hero-section.jpg"
-                  alt="interludeksa-work-img" /></a>
-              <div class="latest-work-box">
-                <h3>
-                  Help to design interludeksa.com Site & Translate it.
-                </h3>
-                <ul class="work-details">
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                    </svg>
-                    <span>Translating Site to two languages.</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                    </svg>
-                    <span>Taking care of backend translating part too.</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
-                    <span>Using Loco translate Plugin and WPML.</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <a target="_blank" href="https://interludeksa.com"><span>Go to site Now!</span></a>
-                  </li>
-                </ul>
-                <div class="">
-                  <a target="_blank" href="https://interludeksa.com/" class="btn btn--small">Have a look!</a>
-                </div>
-              </div>
-            </figure>
-
-            <figure class="slide latest-work gsg-js-project">
-              <a target="_blank" href="https://sabbarstudio.com"><img src="images/main_subbar.png"
-                  alt="sabbar-work-img" /></a>
-              <div class="latest-work-box">
-                <h3>
-                  Redesigning <a target="_blank" href="https://sabbarstudio.com">SubbarStudio.com</a> Site
-                </h3>
-                <ul class="work-details">
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                    </svg>
-                    <span>Using Elementor Pro Plugin &</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                    </svg>
-                    <span>Taking care of security.</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
-                    <span>Using wordpress.org standards!</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <a target="_blank" href="http://sabbarstudio.com/"><span>Visit site Now!</span></a>
-                  </li>
-                </ul>
-                <div class="">
-                  <a target="_blank" href="https://sabbarstudio.com" class="btn btn--small">Have a look!</a>
-                </div>
-              </div>
-            </figure>
-
-            <figure class="slide latest-work gsg-js-project">
-              <a target="_blank" href="https://t.me/AlmarbadLib_bot"><img src="images/telgram_bot.jpg"
-                  alt="telgram_bot" /></a>
-              <div class="latest-work-box">
-                <h3>
-                  Telegram bot for a library books, summaries + external search
-                </h3>
-                <ul class="work-details">
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                    </svg>
-                    <span>Including Web-Hosting part.</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                    </svg>
-                    <span>Using Heroku! Hosting services &</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
-                    <span>With Django Admin-panel.</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <span> + Scraper for Searching feature.</span>
-                    <a target="_blank" href="https://t.me/AlmarbadLib_bot">
-                      Give it real try!
-                    </a>
-                  </li>
-                </ul>
-                <div class="">
-                  <a target="_blank"
-                    href="https://mostaql.com/portfolio/1117293-%D8%B9%D9%85%D9%84-%D8%A8%D9%88%D8%AA-%D9%84%D9%85%D9%83%D8%AA%D8%A8%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AA%D9%84%D8%AC%D8%B1%D8%A7%D9%85-%D9%83%D8%AA%D8%A8-%D9%88%D8%B4%D8%B9%D8%B1-%D8%A7%D8%AF%D9%85%D9%86-%D8%A8%D8%A7%D9%86%D9%8A%D9%84-%D9%88%D8%A8%D8%AD%D8%AB-%D9%81%D9%8A-%D9%85%D9%88%D9%82%D8%B9-%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A"
-                    class="btn btn--small">Have a look!</a>
-                </div>
-              </div>
-            </figure>
-
-            <figure class="slide latest-work gsg-js-project">
-              <a target="_blank" href="images/blog.banana.sa-mainPage.png">
-                <img src="images/cover.jpg" alt="first-work-img" />
-              </a>
-              <div class="latest-work-box">
-                <h3>
-                  Creating Banana Blog using WordPress CMS.
-                </h3>
-                <ul class="work-details">
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                    </svg>
-                    <span>Using Astra starter theme and Elemntor.</span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
-                    <span>From Scratch, See <a target="_blank" href="images/blog.banana.sa-mainPage.png">Main Blog page
-                        from here.</a></span>
-                  </li>
-
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <span>View <a target="_blank" href="images/blog-post-page.png">Blog post page.</a></span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <span>View <a target="_blank" href="images/categories-page.png"> categories page.</a></span>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="latest-work-icon" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <span>View <a target="_blank" href="images/sign-new-account-page.png">Signin account page</a>, & <a
-                        target="_blank" href="images/log-in-page.png">Login page.</span>
-                  </li>
-
-                </ul>
-                <div class="">
-                  <a target="_blank" href="http://blog.bananna.sa/" class="btn btn--small">Have a look!</a>
-                </div>
-              </div>
-            </figure>
-
+      <div class="client-work-grid">
+        <div class="client-project-card">
+          <div class="client-project-image">
+            <img src="images/نقطة المعرفة الدولية للتصميم والتطوير.png" alt="Academy IK Site" loading="lazy">
+          </div>
+          <div class="client-project-content">
+            <h3 class="client-project-title">Academy IK – Educational Platform</h3>
+            <p class="client-project-description">
+              Educational website built with WordPress and custom plugin development. 
+              Extended theme functionality with custom plugins to support additional page templates and features.
+            </p>
+            <div class="client-project-tags">
+              <span class="client-tag">WordPress</span>
+              <span class="client-tag">PHP</span>
+              <span class="client-tag">Plugin Development</span>
+            </div>
+            <div class="client-project-links">
+              <a href="https://academyik.com/" class="client-project-link" target="_blank">View Site →</a>
+            </div>
           </div>
         </div>
-        <button class="next">❯</button>
-      </div>
-    </div>
-    <div class="dots"></div>
 
-    <div id="movingNewsBar" class="moving-bar">
-      <div id="main-trackers-container" class="main-trackers-container">
-        <div class="marquee">
-          <div class="track">
-            <div class="track-item">
-              <span>Responsive Design</span>
-            </div>            
-            <div class="track-item">
-              <span>PHP / WordPress</span>
+        <div class="client-project-card">
+          <div class="client-project-image">
+            <img src="images/rsz_1interludeksa-hero-section.jpg" alt="Interlude KSA" loading="lazy">
+          </div>
+          <div class="client-project-content">
+            <h3 class="client-project-title">Interlude KSA – Multilingual Site</h3>
+            <p class="client-project-description">
+              Website design and translation project with multi-language support. 
+              Implemented WPML and Loco Translate for backend translation management and frontend language switching.
+            </p>
+            <div class="client-project-tags">
+              <span class="client-tag">WordPress</span>
+              <span class="client-tag">WPML</span>
+              <span class="client-tag">Multilingual</span>
             </div>
-            <div class="track-item">
-              <span>Analytical</span>
-            </div>           
-            <div class="track-item">
-              <span>Python Stack</span>
-            </div>
-            <div class="track-item">
-              <span>Open-minded</span>
-            </div>            
-            <div class="track-item">
-              <span>MERN Stack</span>
-            </div>
-            <div class="track-item">
-              <span>Curious</span>
-            </div>
-            <div class="track-item">           
-              <span>Full Stack Development</span>
-            </div>
-            <div class="track-item">
-              <span>Clean-coded</span>
-            </div>
-            <div class="track-item">           
-              <span>SEO-friendly</span>
-            </div>            
-            <div class="track-item">
-              <span>Problem Solver</span>
-            </div>
-            <div class="track-item">
-              <span>Continuous learner</span>
+            <div class="client-project-links">
+              <a href="https://interludeksa.com" class="client-project-link" target="_blank">View Site →</a>
             </div>
           </div>
-          <div class="track"></div>
+        </div>
         </div>
       </div>
-    </div>
-       
-  </section>
-
-
-  <div class="container">
-
-    <section class="slider-section" id="experimental" data-slides-to-show="3">
-      <h2>Learning projects...</h2>
-      <div class="slider-wrapper">
-        <div class="slider-controls">
-          <button class="prev">❮</button>
-          <div class="slider-container">
-            <div class="slider-track" id="experimental-slider-track"></div>
-          </div>
-          <button class="next">❯</button>
-        </div>
-      </div>
-      <div class="dots"></div>
     </section>
 
-    <summary>
-      <p class="summaries-text"> Glad that you reached to this far, I wanna thank you for watching every thing, <span
-          class="hero-words-color">all respect and love</span>. ♥️</p>
-    </summary>
+  <!-- What Makes Me Special Section -->
+  <section class="special" id="special">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">My Journey</p>
+        <h2 class="section-title">What Makes Me Special?</h2>
+        <p class="section-description">
+          My expertise spans a diverse range of cutting-edge technologies and methodologies, 
+          enabling me to deliver robust, scalable, and innovative solutions.
+        </p>
+      </div>
+      
+      <div class="special-content">
+        <p class="journey-text">
+          I'm a Multimedia and Web Development graduate from <a href="https://www.iugaza.edu.ps/en" target="_blank" class="journey-link">IUG</a> <a href="files/bachelor-degree-certificate.pdf" target="_blank" class="journey-link"> (class of 2022)</a>, 
+          now diving deep into backend technologies with the goal of becoming a complete full stack developer. 
+          I started with WordPress CMS three years ago and still use it to help Arabian clients build and manage 
+          their sites from scratch. Currently expanding my skills in Django and Python, building APIs for mobile apps, 
+          and exploring data scraping. My journey combines creative design with solid programming skills across the full web development stack.
+        </p>
+      </div>
 
-    <footer>
-      <div class="footmz">
-        &copy;<time id="current-year" datetime="2025-05"></time> Created with 🖤 by Mahmoud Zughbor
+      <div class="special-grid">
+        <div class="special-card">
+          <div class="special-icon">⚡</div>
+          <h3 class="special-title">Fast Learner</h3>
+          <p class="special-description">
+            Adapting quickly to new challenges and technologies is my forte. I thrive in dynamic environments where continuous learning is key to success.
+            </p>
+          </div>
+
+        <div class="special-card">
+          <div class="special-icon">👥</div>
+          <h3 class="special-title">Team Player</h3>
+          <p class="special-description">
+            I excel in collaborative settings, fostering a positive and productive team dynamic. I believe that the best results are achieved through collective effort.
+          </p>
+        </div>
+
+        <div class="special-card">
+          <div class="special-icon">🎨</div>
+          <h3 class="special-title">Creative</h3>
+          <p class="special-description">
+            Bringing innovative ideas to the table is my passion. I enjoy thinking outside the box to find unique solutions to complex problems and enhance user experiences.
+            </p>
+          </div>
+
+        <div class="special-card">
+          <div class="special-icon">🔧</div>
+          <h3 class="special-title">Problem-Solver</h3>
+          <p class="special-description">
+            With a knack for analytical thinking, I break down complex issues into manageable parts to devise effective and efficient solutions.
+            </p>
+          </div>
+
+        <div class="special-card">
+          <div class="special-icon">📈</div>
+          <h3 class="special-title">Ambitious</h3>
+          <p class="special-description">
+            I am driven to achieve excellence in every project I undertake. Setting high standards for myself, I constantly seek opportunities for growth and improvement.
+          </p>
+        </div>
+
+        <div class="special-card">
+          <div class="special-icon">😊</div>
+          <h3 class="special-title">Positive</h3>
+          <p class="special-description">
+            I maintain a positive outlook, which helps in overcoming challenges and motivating those around me. I believe a positive mindset is crucial for a successful team.
+          </p>
+    </div>
+  </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Skills & Technologies</p>
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-description">
+          A comprehensive overview of the technologies and tools I work with.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-title">Frontend</h3>
+          <ul class="skill-list">
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+            <li>Responsive Design</li>
+              </ul>
+              </div>
+        <div class="skill-category">
+          <h3 class="skill-title">Backend</h3>
+          <ul class="skill-list">
+            <li>Django</li>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>API Development</li>
+              </ul>
+              </div>
+        <div class="skill-category">
+          <h3 class="skill-title">Tools & Others</h3>
+          <ul class="skill-list">
+            <li>Git</li>
+            <li>PostgreSQL</li>
+            <li>Docker</li>
+            <li>CI/CD</li>
+              </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Testimonials</p>
+        <h2 class="section-title">What my colleagues are saying</h2>
+        <p class="section-description">
+          Feedback from professionals I've had the pleasure to work with.
+        </p>
+      </div>
+      
+      <div class="testimonials-carousel-wrapper">
+        <button class="carousel-btn carousel-btn-prev" id="testimonialsPrev" aria-label="Previous testimonials">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+        </button>
+        <div class="testimonials-carousel-container">
+          <div class="testimonials-carousel" id="testimonialsCarousel">
+            <!-- Testimonials will be loaded dynamically from JSON -->
+                </div>
+              </div>
+        <button class="carousel-btn carousel-btn-next" id="testimonialsNext" aria-label="Next testimonials">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18l6-6-6-6"/>
+                    </svg>
+        </button>
+      </div>
+      <div class="carousel-dots" id="testimonialsDots">
+        <!-- Dots will be generated dynamically -->
+                </div>
+              </div>
+  </section>
+
+  <!-- Developer Tools Marquee -->
+  <section class="tools-marquee" id="tools">
+    <div class="container">
+      <div class="tools-header">
+        <p class="section-label">Technologies & Tools</p>
+        <h2 class="section-title">Proficient across the modern stack</h2>
+        <p class="section-description">
+          Leveraging a diverse set of technologies to build robust and scalable software solutions.
+        </p>
+      </div>
+            </div>            
+    <div class="marquee-wrapper">
+      <div class="marquee-container">
+        <div class="marquee-track">
+          <div class="marquee-item">React</div>
+          <div class="marquee-item">Django</div>
+          <div class="marquee-item">Python</div>
+          <div class="marquee-item">JavaScript</div>
+          <div class="marquee-item">HTML/CSS</div>
+          <div class="marquee-item">PHP</div>
+          <div class="marquee-item">WordPress</div>
+          <div class="marquee-item">REST API</div>
+          <div class="marquee-item">MySQL</div>
+          <div class="marquee-item">PostgreSQL</div>
+          <div class="marquee-item">Git</div>
+          <div class="marquee-item">Docker</div>
+          <div class="marquee-item">Bootstrap</div>
+          <div class="marquee-item">Tailwind CSS</div>
+          <div class="marquee-item">Node.js</div>
+          <div class="marquee-item">Web Scraping</div>
+          <div class="marquee-item">API Integration</div>
+          <div class="marquee-item">Responsive Design</div>
+          <!-- Duplicate items for seamless loop -->
+          <div class="marquee-item">React</div>
+          <div class="marquee-item">Django</div>
+          <div class="marquee-item">Python</div>
+          <div class="marquee-item">JavaScript</div>
+          <div class="marquee-item">HTML/CSS</div>
+          <div class="marquee-item">PHP</div>
+          <div class="marquee-item">WordPress</div>
+          <div class="marquee-item">REST API</div>
+          <div class="marquee-item">MySQL</div>
+          <div class="marquee-item">PostgreSQL</div>
+          <div class="marquee-item">Git</div>
+          <div class="marquee-item">Docker</div>
+          <div class="marquee-item">Bootstrap</div>
+          <div class="marquee-item">Tailwind CSS</div>
+          <div class="marquee-item">Node.js</div>
+          <div class="marquee-item">Web Scraping</div>
+          <div class="marquee-item">API Integration</div>
+          <div class="marquee-item">Responsive Design</div>
+            </div>
+            </div>           
+            </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-header">
+        <p class="section-label">Contact</p>
+        <h2 class="contact-main-title">Let's Work Together</h2>
+        <p class="contact-description">
+          We would love to hear from you. Fill out the form or reach out through the links below. 
+          Have a technical question? Feel free to connect via LinkedIn or WhatsApp.
+        </p>
+            </div>            
+      
+      <div class="contact-content-wrapper">
+        <div class="contact-form-container">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Full name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  class="form-input" 
+                  placeholder="Enter your full name" 
+                  required
+                >
+            </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="Enter your email" 
+                  required
+                >
+            </div>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">How can I help?</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                class="form-textarea" 
+                placeholder="Tell me about your project or question" 
+                rows="4" 
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+            <div class="form-message" id="formMessage"></div>
+          </form>
+            </div>            
+        
+        <div class="contact-info-section">
+          <div class="contact-info">
+            <h3 class="contact-info-title">Get in Touch</h3>
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/mzughbor" class="contact-link" target="_blank">
+                <span class="contact-link-icon">💼</span>
+                LinkedIn
+              </a>
+              <a href="https://github.com/mzughbor" class="contact-link" target="_blank">
+                <span class="contact-link-icon">💻</span>
+                GitHub
+              </a>
+              <a href="https://wa.me/+201014674522" class="contact-link" target="_blank">
+                <span class="contact-link-icon">💬</span>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="container">
+      <p>&copy; <span id="currentYear"></span> mzughbor. All rights reserved.</p>
       </div>
     </footer>
 
-  </div>
-  <script src="./scripts/smoothScroll.js"></script>
-  <script src="./scripts/headerScroll.js"></script>
-  <script src="./scripts/slidersLatestWork.js"></script>
-  <script src="./scripts/displayData.js"></script>
-  <script src="./scripts/darkMode.js"></script>
-  <script src="./scripts/responsive.js"></script>
-  <script src="./scripts/movingBar.js"></script>
-  <script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-  </script>
+  <!-- JavaScript with cache busting - Update version number when making JS changes -->
+  <script src="scripts/main.js?v=1.0.5"></script>
 </body>
-
 </html>
