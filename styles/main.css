@@ -77,6 +77,14 @@ html {
     scroll-behavior: smooth;
 }
 
+.light-mode {
+    color-scheme: light;
+}
+
+.dark-mode {
+    color-scheme: dark;
+}
+
 body {
     font-family: var(--font-family);
     font-size: var(--font-size-base);
@@ -191,6 +199,19 @@ button {
     color: var(--text-primary);
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+@media (min-width: 769px) {
+    .nav-menu {
+        margin-left: auto;
+        margin-right: var(--spacing-md);
+    }
+}
+
 .theme-toggle {
     display: flex;
     align-items: center;
@@ -199,6 +220,7 @@ button {
     height: 40px;
     border-radius: var(--radius-md);
     background-color: var(--bg-secondary);
+    color: var(--text-primary);
     transition: background-color var(--transition-fast);
 }
 
@@ -237,7 +259,7 @@ button {
     height: 2px;
     background-color: var(--text-primary);
     border-radius: 2px;
-    transition: all var(--transition-fast);
+    transition: all var(--transition-fast), background-color var(--transition-base);
 }
 
 .mobile-menu-toggle.active span:nth-child(1) {
@@ -259,6 +281,12 @@ button {
         position: relative;
     }
 
+    .theme-toggle {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+    }
+
     .nav-menu {
         position: fixed;
         top: 60px;
@@ -270,17 +298,19 @@ button {
         padding: 0;
         background-color: var(--bg-primary);
         border-bottom: 1px solid var(--border-color);
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        box-shadow: var(--shadow-md);
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+        transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, background-color var(--transition-base), border-color var(--transition-base);
         opacity: 0;
         z-index: 999;
         will-change: max-height, opacity;
     }
 
     .nav-menu.active {
-        max-height: 280px;
+        max-height: min(70vh, 480px);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
         opacity: 1;
         padding: var(--spacing-xs) 0;
     }
@@ -297,21 +327,17 @@ button {
         font-size: var(--font-size-base);
         color: var(--text-primary);
         border-bottom: 1px solid var(--border-color);
-        transition: background-color var(--transition-fast);
+        transition: background-color var(--transition-fast), color var(--transition-base);
     }
 
-    .nav-menu .nav-link:hover {
+    .nav-menu .nav-link:hover,
+    .nav-menu .nav-link:active {
         background-color: var(--bg-secondary);
         color: var(--text-primary);
     }
 
     .nav-menu li:last-child .nav-link {
         border-bottom: none;
-    }
-
-    .nav-menu .theme-toggle {
-        margin: var(--spacing-sm) var(--spacing-md);
-        align-self: flex-start;
     }
 }
 

@@ -5,34 +5,25 @@
     const themeToggle = document.getElementById('themeToggle');
     const body = document.body;
 
-    // Check for saved theme preference or default to light mode
+    function applyTheme(theme) {
+        body.classList.remove('light-mode', 'dark-mode');
+        body.classList.add(theme);
+        localStorage.setItem('theme', theme);
+        document.documentElement.style.colorScheme = theme === 'dark-mode' ? 'dark' : 'light';
+    }
+
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        body.className = savedTheme;
-    } else {
-        body.classList.add('light-mode');
+    applyTheme(savedTheme === 'dark-mode' ? 'dark-mode' : 'light-mode');
+
+    if (!themeToggle) {
+        return;
     }
 
-    // Update theme toggle icon based on current theme
-    function updateThemeIcon() {
-        // Icons are handled via CSS classes
-    }
-
-    // Toggle theme
-    themeToggle.addEventListener('click', function () {
-        if (body.classList.contains('light-mode')) {
-            body.classList.remove('light-mode');
-            body.classList.add('dark-mode');
-            localStorage.setItem('theme', 'dark-mode');
-        } else {
-            body.classList.remove('dark-mode');
-            body.classList.add('light-mode');
-            localStorage.setItem('theme', 'light-mode');
-        }
-        updateThemeIcon();
+    themeToggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const nextTheme = body.classList.contains('light-mode') ? 'dark-mode' : 'light-mode';
+        applyTheme(nextTheme);
     });
-
-    updateThemeIcon();
 })();
 
 // ============================================
@@ -106,26 +97,19 @@
             });
         }
 
-        // Close menu when clicking on theme toggle (but don't prevent theme toggle)
-        const themeToggle = document.getElementById('themeToggle');
-        if (themeToggle) {
-            themeToggle.addEventListener('click', function(e) {
-                // Small delay to allow theme toggle to work first
-                setTimeout(closeMenu, 150);
-            });
-        }
-
         // Close menu when clicking outside
         document.addEventListener('click', function (event) {
             if (isMenuOpen && window.innerWidth <= 768) {
                 const isClickInsideNav = navMenu.contains(event.target);
                 const isClickOnToggle = mobileMenuToggle.contains(event.target);
+                const themeToggle = document.getElementById('themeToggle');
+                const isClickOnTheme = themeToggle && themeToggle.contains(event.target);
 
-                if (!isClickInsideNav && !isClickOnToggle) {
+                if (!isClickInsideNav && !isClickOnToggle && !isClickOnTheme) {
                     closeMenu();
                 }
             }
-        }, true); // Use capture phase to catch clicks earlier
+        }, true);
 
         // Close menu on window resize (if resized to desktop)
         let resizeTimeout;
